@@ -25,7 +25,7 @@ body {
   overflow: hidden;
 }
 
-.aang {
+.aang-container {
   width: 50vmin;
   height: 90vmin;
   border: 1px solid #d5a77d;
@@ -39,6 +39,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .sign {
@@ -77,8 +78,8 @@ body {
   border-radius: 0 0 20vmin 20vmin;
   top: 55%;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 1vmin 0 #fff, 0 0 2vmin 0 #8efffd, 0 0 3vmin 0 #8efffd;
-          box-shadow: 0 0 1vmin 0 #fff, 0 0 2vmin 0 #8efffd, 0 0 3vmin 0 #8efffd;
+  -webkit-box-shadow: 0 0 1vmin 0 #fff, 0 0 2vmin 0 #8efffd, 0 0 2.2vmin 0 #8efffd, 0 0 3vmin 0 #8efffd;
+          box-shadow: 0 0 1vmin 0 #fff, 0 0 2vmin 0 #8efffd, 0 0 2.2vmin 0 #8efffd, 0 0 3vmin 0 #8efffd;
   z-index: 10;
 }
 
@@ -95,12 +96,13 @@ body {
 }
 
 .head__arrow--top {
-  width: 24%;
+  width: 25%;
   height: 35%;
   background-color: #fff;
   position: absolute;
   top: 0;
-  left: 38%;
+  left: 37.5%;
+  border-radius: 20% 20% 0 0;
   -webkit-box-shadow: 0 0 0.5vmin 0 #fff, 0 0 2vmin 0 #8efffd, 0 0 4vmin 0 #8efffd;
           box-shadow: 0 0 0.5vmin 0 #fff, 0 0 2vmin 0 #8efffd, 0 0 4vmin 0 #8efffd;
 }
@@ -113,6 +115,7 @@ body {
   position: absolute;
   top: 2%;
   left: 0;
+  border-radius: 20% 20% 0 0;
   background-color: #fff;
 }
 
@@ -123,7 +126,7 @@ body {
   display: block;
   position: absolute;
   top: -20%;
-  left: 30%;
+  left: 28%;
   border-bottom: 5vmin solid #fff;
   border-left: 5vmin solid transparent;
   border-top: 5vmin solid transparent;
@@ -169,4 +172,12 @@ body {
   position: absolute;
   bottom: 2%;
   left: 4%;
+}
+
+.ear__l, .ear__r {
+  width: 4.5%;
+  height: 4%;
+  background-color: #fedbbb;
+  position: absolute;
+  top: 35%;
 }
