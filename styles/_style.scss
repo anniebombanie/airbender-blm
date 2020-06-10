@@ -71,26 +71,26 @@ body {
 }
 
 .head {
-  @include w-h( 25%, 16% );
-  border: 1px solid $sd;
-  border-radius: 50% 50% 50% 50% / 40% 40% 60% 60% ;
+  margin-top: 10%;
+  @include w-h( 25%, 18% );
+  border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
   position: relative;
   overflow: hidden;
-  
   background: $sl;
 
   // eyes
   &::before,
   &::after {
-    @include pseduo-div( 28%, 12% );
+    @include pseduo-div( 29%, 10% );
     border-radius: 0 0 20vmin 20vmin;
-    top: 48%;
+    top: 55%;
     background-color: $wh;
     box-shadow: 0 0 0.5vmin 0 $wh;
+    z-index: 10;
   }
 
   &::before {
-    left: 15%;
+    left: 13%;
     transform: rotate( 25deg );
   }
 
@@ -100,10 +100,12 @@ body {
   }
 
   &__arrow {
-    @include w-h( 18%, 25% );
+    @include w-h( 24%, 35% );
     background-color: $wh;
-    position: relative;
-    left: 40%;
+    position: absolute;
+    top: 0;
+    left: 38%;
+    box-shadow: 0 0 0.5vmin 0 $wh;
 
     &::after {
       @include pseduo-div( 0, 0 );
@@ -113,5 +115,14 @@ body {
       border-left: 10vmin solid $t;
       border-top: 10vmin solid $t;
     }
+  }
+
+  &__shadow {
+    @include w-h( 92%, 78% );
+    border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+    background-color: $sd;
+    position: absolute;
+    bottom: 2%;
+    left: 4%;
   }
 }
