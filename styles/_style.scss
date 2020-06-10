@@ -18,7 +18,7 @@ $bm: #964a33;
 $bd: #773225;
 $b2l: #773225;
 $b2d: #493025;
-$b: #95bfe5;
+$b: #8efffd;
 $n: #3d5462;
 $wh: #fff;
 $bl: #000;
@@ -57,8 +57,8 @@ body {
 }
 
 .sign {
-  background-color: $wh;
-  @include w-h( 55%, 25% );
+  background-color: darken( $wh, 2 );
+  @include w-h( 55%, 20% );
   position: relative;
 
   svg {
@@ -85,7 +85,7 @@ body {
     border-radius: 0 0 20vmin 20vmin;
     top: 55%;
     background-color: $wh;
-    box-shadow: 0 0 0.5vmin 0 $wh;
+    box-shadow: 0 0 1vmin 0 $wh, 0 0 2vmin 0 $b, 0 0 3vmin 0 $b;
     z-index: 10;
   }
 
@@ -100,22 +100,60 @@ body {
   }
 
   &__arrow {
-    @include w-h( 24%, 35% );
-    background-color: $wh;
-    position: absolute;
-    top: 0;
-    left: 38%;
-    box-shadow: 0 0 0.5vmin 0 $wh;
+    &--top {
+      @include w-h( 24%, 35% );
+      background-color: $wh;
+      position: absolute;
+      top: 0;
+      left: 38%;
+      box-shadow: 0 0 0.5vmin 0 $wh, 0 0 2vmin 0 $b, 0 0 4vmin 0 $b;
 
-    &::after {
-      @include pseduo-div( 0, 0 );
-      top: 10%;
-      left: 50%;
-      border-top: 10vmin solid $wh;
-      border-left: 10vmin solid $t;
-      border-top: 10vmin solid $t;
+      // line
+      &::before {
+        @include pseduo-div( 100%, 100% );
+        top: 2%;
+        left: 0;
+        background-color: $wh;
+      }
+
+      // arrow
+      &::after {
+        @include pseduo-div( 0, 0 );
+        top: -20%;
+        left: 30%;
+        border-bottom: 5vmin solid $wh;
+        border-left: 5vmin solid $t;
+        border-top: 5vmin solid $t;
+        transform: rotate( 45deg );
+      }
+    }
+
+    &--triangle {
+      top: 0;
+      left: 44%;
+      position: relative;
+
+      &::before,
+      &::after {
+        @include pseduo-div( 0, 0 );
+        top: -2.5vmin;
+        left: 0;
+        filter: blur( 0.5vmin );
+        transform: rotate( 45deg );
+        border-left: 6vmin solid $t;
+        border-top: 6vmin solid $t;
+      }
+
+      &::before {
+        border-bottom: 6vmin solid $b;
+      }
+
+      &::after {
+        border-bottom: 6vmin solid $wh;
+      }
     }
   }
+
 
   &__shadow {
     @include w-h( 92%, 78% );

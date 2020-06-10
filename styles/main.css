@@ -42,9 +42,9 @@ body {
 }
 
 .sign {
-  background-color: #fff;
+  background-color: #fafafa;
   width: 55%;
-  height: 25%;
+  height: 20%;
   position: relative;
 }
 
@@ -77,8 +77,8 @@ body {
   border-radius: 0 0 20vmin 20vmin;
   top: 55%;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 0.5vmin 0 #fff;
-          box-shadow: 0 0 0.5vmin 0 #fff;
+  -webkit-box-shadow: 0 0 1vmin 0 #fff, 0 0 2vmin 0 #8efffd, 0 0 3vmin 0 #8efffd;
+          box-shadow: 0 0 1vmin 0 #fff, 0 0 2vmin 0 #8efffd, 0 0 3vmin 0 #8efffd;
   z-index: 10;
 }
 
@@ -94,28 +94,71 @@ body {
           transform: rotate(-25deg);
 }
 
-.head__arrow {
+.head__arrow--top {
   width: 24%;
   height: 35%;
   background-color: #fff;
   position: absolute;
   top: 0;
   left: 38%;
-  -webkit-box-shadow: 0 0 0.5vmin 0 #fff;
-          box-shadow: 0 0 0.5vmin 0 #fff;
+  -webkit-box-shadow: 0 0 0.5vmin 0 #fff, 0 0 2vmin 0 #8efffd, 0 0 4vmin 0 #8efffd;
+          box-shadow: 0 0 0.5vmin 0 #fff, 0 0 2vmin 0 #8efffd, 0 0 4vmin 0 #8efffd;
 }
 
-.head__arrow::after {
+.head__arrow--top::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 2%;
+  left: 0;
+  background-color: #fff;
+}
+
+.head__arrow--top::after {
   content: '';
   width: 0;
   height: 0;
   display: block;
   position: absolute;
-  top: 10%;
-  left: 50%;
-  border-top: 10vmin solid #fff;
-  border-left: 10vmin solid transparent;
-  border-top: 10vmin solid transparent;
+  top: -20%;
+  left: 30%;
+  border-bottom: 5vmin solid #fff;
+  border-left: 5vmin solid transparent;
+  border-top: 5vmin solid transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.head__arrow--triangle {
+  top: 0;
+  left: 44%;
+  position: relative;
+}
+
+.head__arrow--triangle::before, .head__arrow--triangle::after {
+  content: '';
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  top: -2.5vmin;
+  left: 0;
+  -webkit-filter: blur(0.5vmin);
+          filter: blur(0.5vmin);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-left: 6vmin solid transparent;
+  border-top: 6vmin solid transparent;
+}
+
+.head__arrow--triangle::before {
+  border-bottom: 6vmin solid #8efffd;
+}
+
+.head__arrow--triangle::after {
+  border-bottom: 6vmin solid #fff;
 }
 
 .head__shadow {
