@@ -7,33 +7,32 @@ html {
 }
 
 /* --- Colours --- */
-$s-l: #fedbbb;
-$s-d: #d5a77d;
-$o-l: #d5a77d;
-$o-d: #a45216;
-$y-l: #ffd75e;
-$y-d: #deb563;
-$b-l: #deb563;
-$b-m: #964a33;
-$b-d: #773225;
-$b2-l: #773225;
-$b2-d: #493025;
+$sl: #fedbbb;
+$sd: #d5a77d;
+$ol: #d5a77d;
+$od: #a45216;
+$yl: #ffd75e;
+$yd: #deb563;
+$bl: #deb563;
+$bm: #964a33;
+$bd: #773225;
+$b2l: #773225;
+$b2d: #493025;
 $b: #95bfe5;
 $n: #3d5462;
 $wh: #fff;
 $bl: #000;
 $t: transparent;
 
-@mixin pseduo-div( $w, $h, $c ) {
+@mixin pseduo-div( $w, $h ) {
   content: '';
   width: $w;
   height: $h;
   display: block;
   position: absolute;
-  background-color: $c;
 }
 
-@mixin w-h ( $w, $h ) {
+@mixin w-h( $w, $h ) {
   width: $w;
   height: $h;
 }
@@ -49,12 +48,70 @@ body {
   overflow: hidden;
 }
 
+.aang {
+  @include w-h( 50vmin, 90vmin );
+  border: 1px solid $sd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .sign {
   background-color: $wh;
-  height: 50vmin;
-  width: 60vmin;
+  @include w-h( 55%, 25% );
+  position: relative;
 
   svg {
-    width: 80%;
+    @include w-h( 90%, 90% );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d( -50%, -50%, 0 );
+  }
+}
+
+.head {
+  @include w-h( 25%, 16% );
+  border: 1px solid $sd;
+  border-radius: 50% 50% 50% 50% / 40% 40% 60% 60% ;
+  position: relative;
+  overflow: hidden;
+  
+  background: $sl;
+
+  // eyes
+  &::before,
+  &::after {
+    @include pseduo-div( 28%, 12% );
+    border-radius: 0 0 20vmin 20vmin;
+    top: 48%;
+    background-color: $wh;
+    box-shadow: 0 0 0.5vmin 0 $wh;
+  }
+
+  &::before {
+    left: 15%;
+    transform: rotate( 25deg );
+  }
+
+  &::after {
+    left: 60%;
+    transform: rotate( -25deg );
+  }
+
+  &__arrow {
+    @include w-h( 18%, 25% );
+    background-color: $wh;
+    position: relative;
+    left: 40%;
+
+    &::after {
+      @include pseduo-div( 0, 0 );
+      top: 10%;
+      left: 50%;
+      border-top: 10vmin solid $wh;
+      border-left: 10vmin solid $t;
+      border-top: 10vmin solid $t;
+    }
   }
 }

@@ -25,12 +25,91 @@ body {
   overflow: hidden;
 }
 
+.aang {
+  width: 50vmin;
+  height: 90vmin;
+  border: 1px solid #d5a77d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .sign {
   background-color: #fff;
-  height: 50vmin;
-  width: 60vmin;
+  width: 55%;
+  height: 25%;
+  position: relative;
 }
 
 .sign svg {
-  width: 80%;
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+.head {
+  width: 25%;
+  height: 16%;
+  border: 1px solid #d5a77d;
+  border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+  position: relative;
+  overflow: hidden;
+  background: #fedbbb;
+}
+
+.head::before, .head::after {
+  content: '';
+  width: 28%;
+  height: 12%;
+  display: block;
+  position: absolute;
+  border-radius: 0 0 20vmin 20vmin;
+  top: 48%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 0.5vmin 0 #fff;
+          box-shadow: 0 0 0.5vmin 0 #fff;
+}
+
+.head::before {
+  left: 15%;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+
+.head::after {
+  left: 60%;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+
+.head__arrow {
+  width: 18%;
+  height: 25%;
+  background-color: #fff;
+  position: relative;
+  left: 40%;
+}
+
+.head__arrow::after {
+  content: '';
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  border-top: 10vmin solid #fff;
+  border-left: 10vmin solid transparent;
+  border-top: 10vmin solid transparent;
 }
