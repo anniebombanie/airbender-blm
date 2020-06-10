@@ -1,0 +1,257 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* --- Colours --- */
+$navy: #010152;
+$o: #d25317;
+$y: #f7e957;
+$skin: #efdebd;
+$cloud: #d8b9d7;
+$peach: #e89b9d;
+$r: #dd2602;
+$white: #fff;
+$b: #000;
+$t: transparent;
+
+@mixin pseduo-div( $w, $h, $c ) {
+  content: '';
+  width: $w;
+  height: $h;
+  display: block;
+  position: absolute;
+  background-color: $c;
+}
+
+@mixin w-h ( $w, $h ) {
+  width: $w;
+  height: $h;
+}
+
+body {
+  margin: 0;
+  background: $cloud;
+  // background: linear-gradient( $peach, $y, $white );
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.madeline-container {
+  @include w-h( 40.5vmin, 91.8vmin );
+  position: relative;
+  // background: 0.2;
+  background-size: auto 96%;
+  // border: 1px solid red;
+  z-index: -20;
+}
+
+.balloon {
+  @include w-h( 49%, 24% );
+  position: absolute;
+  background-color: $r;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+
+  &::after {
+    @include pseduo-div( 2vmin, 2vmin,  $r );
+    clip-path: polygon( 0% 0%, 100% 100%, 0% 100% );
+    position: absolute;
+    top: 101%;
+    left: 45%;
+    border-radius: 40%;
+    transform: rotate( 124deg ) skew( -27deg )
+  }
+
+  &::before {
+    @include pseduo-div( 0.1vmin, 20vmin, rgba( $b, 0.7 ));
+    top: 100%;
+    left: 50.5%;
+    filter: blur( 0.3px );
+  }
+}
+
+.head {
+  @include w-h( 79%, 26% );
+  position: relative;
+  top: 40%;
+  left: 11.5%;
+  border: 1px dashed black;
+
+  // top bow ribbons
+  &::before,
+  &::after {
+    @include pseduo-div( 0, 0, $t );
+    z-index: -10;
+    border-bottom: 7vmin solid $b;
+  }
+
+  &::before {
+    border-right: 6vmin solid $t;
+    top: 5%;
+    left: 31.5%;
+    transform: rotateZ( -8deg );
+  }
+
+  &::after {
+    border-left: 6vmin solid $t;
+    top: 2%;
+    left: 42.5%;
+    transform: rotateZ( -3.5deg );
+  }
+
+  // hair
+  &__hair,
+  &__hair--fringe {
+    @include w-h( 80%, 47% );
+    border: 1px dashed green;
+    position: absolute;
+    top: 52%;
+    left: 12%;
+    border-radius: 50% 50% 60% 60% / 90% 90% 35% 35%;
+    transform: rotateZ( 2.5deg );
+    overflow: hidden;
+  }
+
+  &__hair {
+    background-color: $o;
+
+    // fringe
+    &--fringe {
+      &::before,
+      &::after {
+        @include pseduo-div( 38%, 30%, $o );
+        border-radius: 50%;
+      }
+
+      &::before {
+        top: -5%;
+        left: 22%;
+        transform: rotate( -14deg );
+      }
+
+      &::after {
+        top: -10%;
+        left: 50%;
+        transform: rotate( 14deg );
+      }
+    }
+  }
+
+  &__face {
+    @include w-h( 44%, 42% );
+    border-radius: 70% 70% 60% 70% / 90% 80% 60% 70%;
+    z-index: 0;
+    // box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+    // transform: skew( -1deg );
+    background:
+      // nose
+      radial-gradient( 12% 8% at 58% 60%, $skin 0.5vmin, $t 0.7vmin ),
+      radial-gradient( 10% 8% at 59% 63%, rgba( $b, 0.7 ) 0.4vmin, $t 0.6vmin ),
+      //mouth
+      linear-gradient( 50deg, $t 49%, $skin 50% ),
+      radial-gradient( 2.4% 1.2% at 53.5% 73.5%, $skin 2vmin, $t 2.2vmin ),
+      radial-gradient( 2.2% 1.2% at 54% 76%, rgba( $b, 0.7 ) 2vmin, $t 2.2vmin ),
+      $skin;
+    position: absolute;
+    top: 57%;
+    left: 33.5%;
+
+    // eyes
+    &::before,
+    &::after {
+      @include pseduo-div( 5%, 10%, rgba( $b, 0.8 ));
+      border-radius: 50%;
+    }
+
+    &::before {
+      top: 32%;
+      left: 34%;
+    }
+
+    &::after {
+      top: 34%;
+      left: 72%;
+    }
+  }
+
+  &__hat {
+    @include w-h( 84%, 36% );
+    background-color: $y;
+    border-radius: 70% 70% 50% 50% / 90% 90% 65% 65%;
+    // border: 1px dashed black;
+    // @include w-h( 0, 30% );
+    // border-left: 17vmin solid transparent;
+    // border-right: 17vmin solid transparent;
+    // border-top: 13vmin solid $y;
+    position: absolute;
+    top: 28%;
+    left: 15%;
+    transform: rotateZ( 4deg );
+  }
+}
+
+// TO DO: Make body box bigger
+.body {
+  @include w-h( 56%, 24% );
+  position: absolute;
+  // background-color: $navy;
+  // background-color: rgba( $navy, 0.5 );
+  border-radius: 0 0 45% 55% / 0 0 18% 18%;
+  rotate: -3deg;
+  top: 67.5%;
+  left: 25%;
+  background:
+    linear-gradient( -73deg, $t 33%, $navy 33.5%, $navy 80%, $t 80.5% ),
+    linear-gradient( 74deg, $t 43%, $navy 43.5%, $navy 80%, $t 80.5% ),
+
+  // legs
+  // &::before,
+  // &::after {
+  //   position: absolute;
+  // }
+
+  // &::before {
+  //   @include pseduo-div( 15%, 37%, $skin );
+  //   top: 89%;
+  //   left: 8%;
+  //   rotate: 18deg;
+  // }
+
+  // &::after {
+  //   @include pseduo-div( 15%, 37%, $skin );
+  //   top: 80%;
+  //   left: 77%;
+  //   rotate: -30deg;
+  // }
+}
+
+// &__arm {
+//   &--l,
+//   &--r {
+//     background-color: $skin;
+//     // background-color: rgba( $skin, 0.5 );
+//     position: absolute;
+//   }
+
+//   &--l {
+//     @include w-h( 8%, 10% );
+//     top: 54%;
+//     left: 26%;
+//     rotate: -28deg;
+//   }
+
+//   &--r {
+//     @include w-h( 13%, 4% );
+//     top: 67.5%;
+//     left: 77%;
+//     rotate: 5deg;
+//   }
+// }
