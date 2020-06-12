@@ -12,7 +12,8 @@ $sd: #d1a47b;
 $ol: #eb6d21;
 $od: #a45216;
 $yl: #ffd75e;
-$yd: #deb563;
+$ym: #deb563;
+$yd: #a18348;
 $rl: #964a33;
 $rd: #773225;
 $bl: #773225;
@@ -29,7 +30,7 @@ $t: transparent;
   height: $h;
   display: block;
   position: absolute;
-  background-color: $c;
+  background: $c;
 }
 
 @mixin w-h( $w, $h ) {
@@ -60,7 +61,7 @@ body {
 }
 
 .sign {
-  @include w-h( 65%, 22% );
+  @include w-h( 70%, 22% );
   position: relative;
   transform: rotate( -2.5deg );
   background: linear-gradient( 165deg, darken( $wh, 9 ) 65%, darken( $wh, 2 ) 66% );
@@ -238,23 +239,25 @@ body {
   }
 
   &__l {
-    background: linear-gradient( 26deg, $t 28%, $yl calc( 28% + 1px ), $yl 70%, $t calc( 70% + 1px ));
+    background: linear-gradient( 26deg, $od 28%, $ym calc( 28% + 1px ), $ym 70%, $t calc( 70% + 1px ));
     left: 38%;
+    border-radius: 0 0 0 60%;
 
     &::after {
       left: 100%;
       // border: 1px solid white;
-      background: linear-gradient( 60deg, $yl 49%, $t 50% );
+      background: linear-gradient( 60deg, $ym 49%, $t 50% );
     }
   }
 
   &__r {
-    background: linear-gradient( -30deg, $t 28%, $yl calc( 28% + 1px ), $yl 70%, $t calc( 70% + 1px ));
+    background: linear-gradient( -26deg, $od 28%, $ym calc( 28% + 1px ), $ym 70%, $t calc( 70% + 1px ));
     left: 53%;
+    border-radius: 0 0 60% 0;
 
     &::after {
-      left: -40%;
-      background: linear-gradient( -60deg, $yl 50%, $t 51% );
+      left: -45%;
+      background: linear-gradient( -58deg, $ym 50%, $t 51% );
     }
   }
 }
@@ -270,7 +273,8 @@ body {
 
   // body
   &::after {
-    @include pseduo-div( 120%, 240%, $yd );
+    @include pseduo-div( 120%, 240%, null );
+    background: linear-gradient( $od 42%, $ym 43% );
     position: absolute;
     border-radius: 0 0 30% 30%;
     top: -180%;
@@ -282,7 +286,7 @@ body {
   &__l,
   &__r {
     @include w-h( 18%, 22% );
-    background-color: $yd;
+    background-color: $ym;
     position: absolute;
     top: 60%;
     border-radius: 20% 20% 60% 60% / 20%;
@@ -299,54 +303,47 @@ body {
   }
 }
 
-// .cloak {
-//   @include w-h( 60%, 35% );
-//   border-radius: 50%;
-//   position: absolute;
-//   top: 30%;
-//   // border: 1px solid $wh;
-//   overflow: hidden;
+.cloak {
+  @include w-h( 60%, 35% );
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  // border: 1px solid $wh;
+  // background: linear-gradient( 180deg, $t 45%, $rl 45%, $rl 52%, $t 52.5%);
+  overflow: hidden;
 
-//   &::before,
-//   &::after {
-//     @include pseduo-div( 90%, 100%, $od );
-//     top: 12%;
-//     // border: 1px solid $wh;
-//   }
+  &::before,
+  &::after {
+    @include pseduo-div( 80%, 90%, null );
+    top: 20%;
+    // border: 1px solid $wh;
+  }
 
-//   &::before {
-//     left: -55%;
-//     transform: rotate( 50deg );
-//   }
+  &::before {
+    left: -52%;
+    background:
+    radial-gradient( 2% 4% at 83% 9%, $od 4vmin, $t calc( 4vmin + 1px )),
+    linear-gradient( 90deg, $od 80%, $t 80.5% );
+    transform: rotate( 50deg );
+  }
 
-//   &::after {
-//     left: 65%;
-//     transform: rotate( -50deg );
-//   }
-// }
+  &::after {
+    left: 72%;
+    background:
+    radial-gradient( 2% 4% at 17% 11%, $od 4vmin, $t calc( 4vmin + 1px )),
+    linear-gradient( -90deg, $od 80%, $t 80.5% );
+    transform: rotate( -50deg );
+  }
+}
 
 .arm {
   &__l,
   &__r {
-    @include w-h( 0, 0 );
+    @include w-h( 10%, 22% );
+    background-color: $ym;
     position: absolute;
-    right: 50%;
-    top: 44%;
-    border-top: 20vmin solid $t;
-    // border-radius: 50%;
+    top: 30%;
+    left: 0;
+    border-radius: 20% 20% 60% 60% / 20%;
   }
-
-  &__l {
-    border-left: 10vmin solid $t;
-    border-right: 10vmin solid $od;
-    // transform: rotate( -45deg );
-    left: -30%;
-  }
-
-  // &__r {
-  //   border-left: 20vmin solid $od;
-  //   border-right: 20vmin solid $t;
-  //   transform: rotate( 45deg );
-  //   left: 50%;
-  // }
 }
