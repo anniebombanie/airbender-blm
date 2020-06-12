@@ -211,7 +211,7 @@ body {
 
 .neck {
   @include w-h( 24%, 8% );
-  background-color: $yd;
+  background: linear-gradient( 180deg, $yd 25%, $od);
   position: absolute;
   border-radius: 30% 30% 0 0;
   top: 39.5%;
@@ -241,7 +241,7 @@ body {
   &__l {
     background: linear-gradient( 26deg, $od 28%, $ym calc( 28% + 1px ), $ym 70%, $t calc( 70% + 1px ));
     left: 38%;
-    border-radius: 0 0 0 60%;
+    border-radius: 0 0 0 100% / 0 0 0 60%;
 
     &::after {
       left: 100%;
@@ -253,53 +253,12 @@ body {
   &__r {
     background: linear-gradient( -26deg, $od 28%, $ym calc( 28% + 1px ), $ym 70%, $t calc( 70% + 1px ));
     left: 53%;
-    border-radius: 0 0 60% 0;
+    border-radius: 0 0 100% 0 / 0 0 70% 0;
 
     &::after {
       left: -45%;
       background: linear-gradient( -58deg, $ym 50%, $t 51% );
     }
-  }
-}
-
-.torso {
-  // sash
-  @include w-h( 22%, 5% );
-  background-color: $rl;
-  position: absolute;
-  border-radius: 0 0 40% 40%;
-  top: 56.5%;
-  left: 39%;
-
-  // body
-  &::after {
-    @include pseduo-div( 120%, 240%, null );
-    background: linear-gradient( $od 42%, $ym 43% );
-    position: absolute;
-    border-radius: 0 0 30% 30%;
-    top: -180%;
-    left: -10%;
-  }
-}
-
-.leg {
-  &__l,
-  &__r {
-    @include w-h( 18%, 22% );
-    background-color: $ym;
-    position: absolute;
-    top: 60%;
-    border-radius: 20% 20% 60% 60% / 20%;
-  }
-
-  &__l {
-    left: 35%;
-    transform: rotate( 10deg );
-  }
-
-  &__r {
-    left: 48%;
-    transform: rotate( -10deg );
   }
 }
 
@@ -339,11 +298,70 @@ body {
 .arm {
   &__l,
   &__r {
-    @include w-h( 10%, 22% );
+    @include w-h( 10%, 18% );
     background-color: $ym;
     position: absolute;
-    top: 30%;
-    left: 0;
+    top: 22%;
     border-radius: 20% 20% 60% 60% / 20%;
+  }
+
+  &__l {
+    left: 17%;
+    transform: rotate( 5deg );
+  }
+
+  &__r {
+    left: 73.5%;
+    transform: rotate( -3deg );
+  }
+}
+
+.torso {
+  // sash
+  @include w-h( 22%, 5% );
+  background-color: $rl;
+  position: absolute;
+  border-radius: 0 0 40% 40%;
+  top: 56.5%;
+  left: 39%;
+
+  // body
+  &::after {
+    @include pseduo-div( 120%, 240%, null );
+    background: linear-gradient( $od 42%, $ym 43% );
+    position: absolute;
+    border-radius: 0 0 30% 30%;
+    top: -180%;
+    left: -10%;
+  }
+}
+
+.leg {
+  &__l,
+  &__r {
+    @include w-h( 18%, 22% );
+
+    // pants
+    &::before {
+      @include pseduo-div( 17%, 22%, $ym );
+      position: absolute;
+      top: 60%;
+      // border: 1px dashed green;
+      border-radius: 20% 20% 60% 60% / 20%;
+    }
+  }
+
+  &__l {
+    &::before {
+      left: 35%;
+      transform: rotate( 10deg );
+    }
+  }
+
+  &__r {
+    &::before {
+      left: 48%;
+      transform: rotate( -10deg );
+    }
   }
 }
