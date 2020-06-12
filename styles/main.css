@@ -236,15 +236,40 @@ body {
   left: 24%;
 }
 
-.collar {
-  width: 5%;
-  height: 5%;
-  background-color: #964a33;
+.collar__r, .collar__l {
+  width: 8%;
+  height: 6%;
   position: absolute;
-  top: 42.5%;
-  left: 39%;
-  -webkit-transform: rotate(-50deg) skewY(-40deg);
-          transform: rotate(-50deg) skewY(-40deg);
+  top: 42%;
+}
+
+.collar__r::after, .collar__l::after {
+  content: '';
+  width: 52%;
+  height: 60%;
+  display: block;
+  position: absolute;
+  top: 43%;
+}
+
+.collar__r {
+  background: linear-gradient(-30deg, transparent 28%, #ffd75e calc( 28% + 1px), #ffd75e 70%, transparent calc( 70% + 1px));
+  left: 54%;
+}
+
+.collar__r::after {
+  left: -53%;
+  background: linear-gradient(-56deg, #ffd75e 50%, transparent 51%);
+}
+
+.collar__l {
+  background: linear-gradient(30deg, transparent 28%, #ffd75e calc( 28% + 1px), #ffd75e 70%, transparent calc( 70% + 1px));
+  left: 38%;
+}
+
+.collar__l::after {
+  left: 100%;
+  background: linear-gradient(56deg, #ffd75e 50%, transparent 51%);
 }
 
 .torso {

@@ -225,12 +225,38 @@ body {
 }
 
 .collar {
-  @include w-h( 5%, 5% );
-  background-color: $rl;
-  position: absolute;
-  top: 42.5%;
-  left: 39%;
-  transform: rotate( -50deg ) skewY( -40deg );
+  &__r,
+  &__l {
+    @include w-h( 8%, 6% );
+    position: absolute;
+    top: 42%;
+
+    &::after {
+      @include pseduo-div( 52%, 60%, null );
+      top: 43%;
+      // border: 1px solid white;
+    }
+  }
+
+  &__r {
+    background: linear-gradient( -30deg, $t 28%, $yl calc( 28% + 1px ), $yl 70%, $t calc( 70% + 1px ));
+    left: 54%;
+
+    &::after {
+      left: -53%;
+      background: linear-gradient( -56deg, $yl 50%, $t 51% );
+    }
+  }
+
+  &__l {
+    background: linear-gradient( 30deg, $t 28%, $yl calc( 28% + 1px ), $yl 70%, $t calc( 70% + 1px ));
+    left: 38%;
+
+    &::after {
+      left: 100%;
+      background: linear-gradient( 56deg, $yl 50%, $t 51% );
+    }
+  }
 }
 
 .torso {
