@@ -24,12 +24,13 @@ $wh: #fff;
 $bl: #000;
 $t: transparent;
 
-@mixin pseduo-div( $w, $h ) {
+@mixin pseduo-div( $w, $h, $c ) {
   content: '';
   width: $w;
   height: $h;
   display: block;
   position: absolute;
+  background-color: $c;
 }
 
 @mixin w-h( $w, $h ) {
@@ -55,6 +56,8 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  // background: url('../resources/drawing.jpg') 0 0 no-repeat;
+  background-size: auto 101%;
 }
 
 .sign {
@@ -82,9 +85,9 @@ body {
   // eyes
   &::before,
   &::after {
-    @include pseduo-div( 29%, 10% );
+    @include pseduo-div( 29%, 11%, null );
     border-radius: 0 0 20vmin 20vmin;
-    top: 55%;
+    top: 58%;
     background-color: $wh;
     box-shadow: 0 0 1vmin 0 $wh, 0 0 2vmin 0 $b, 0 0 2.2vmin 0 $b, 0 0 3vmin 0 $b;
     z-index: 10;
@@ -103,27 +106,27 @@ body {
   // arrow
   &__arrow {
     &--top {
-      @include w-h( 25%, 35% );
+      @include w-h( 25%, 37% );
       background-color: $wh;
       position: absolute;
       top: 0;
       left: 37.5%;
-      border-radius: 20% 20% 0 0;
+      border-radius: 25% 25% 5% 5%;
       box-shadow: 0 0 0.5vmin 0 $wh, 0 0 2vmin 0 $b, 0 0 4vmin 0 $b;
 
       // line
       &::before {
-        @include pseduo-div( 100%, 100% );
-        top: 2%;
+        @include pseduo-div( 100%, 100%, null );
+        top: 4%;
         left: 0;
-        border-radius: 20% 20% 0 0;
+        border-radius: 25% 25% 5% 5%;
         background-color: $wh;
       }
 
       // arrow
       &::after {
-        @include pseduo-div( 0, 0 );
-        top: -20%;
+        @include pseduo-div( 0, 0, null );
+        top: -10%;
         left: 28%;
         border-bottom: 5vmin solid $wh;
         border-left: 5vmin solid $t;
@@ -139,8 +142,8 @@ body {
 
       &::before,
       &::after {
-        @include pseduo-div( 0, 0 );
-        top: -2.5vmin;
+        @include pseduo-div( 0, 0, null );
+        top: -2vmin;
         left: 0;
         filter: blur( 0.5vmin );
         transform: rotate( 45deg );
@@ -171,10 +174,36 @@ body {
 
 .ear {
   &__l,
+  &__r,
+  &__l::before,
+  &__r::before {
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  }
+
+  &__l,
   &__r {
-    @include w-h( 4.5%, 4% );
+    @include w-h( 6%, 5.5% );
     background-color: $sl;
     position: absolute;
-    top: 35%;
+    top: 33%;
+
+    &::before {
+      @include pseduo-div( 85%, 85%, $sd );
+      left: 0;
+    }
+  }
+
+  &__l {
+    left: 33.5%;
+    transform: rotate( -195deg );
+
+    &::before {
+      left: 10%;
+    }
+  }
+
+  &__r {
+    left: 60.5%;
+    transform: rotate( 195deg );
   }
 }
