@@ -8,20 +8,19 @@ html {
 
 /* --- Colours --- */
 $sl: #fedbbb;
-$sd: #d5a77d;
+$sd: #d1a47b;
 $ol: #d5a77d;
 $od: #a45216;
 $yl: #ffd75e;
 $yd: #deb563;
-$bl: #deb563;
-$bm: #964a33;
-$bd: #773225;
-$b2l: #773225;
-$b2d: #493025;
-$b: #8efffd;
+$rl: #964a33;
+$rd: #773225;
+$bl: #773225;
+$bd: #493025;
+$bu: #8efffd;
 $n: #3d5462;
 $wh: #fff;
-$bl: #000;
+$blk: #000;
 $t: transparent;
 
 @mixin pseduo-div( $w, $h, $c ) {
@@ -56,7 +55,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  // background: url('../resources/drawing.jpg') 0 0 no-repeat;
+  // background: url('../resources/drawing.jpg') 150% 0% no-repeat;
   background-size: auto 101%;
 }
 
@@ -89,7 +88,7 @@ body {
     border-radius: 0 0 20vmin 20vmin;
     top: 58%;
     background-color: $wh;
-    box-shadow: 0 0 1vmin 0 $wh, 0 0 2vmin 0 $b, 0 0 2.2vmin 0 $b, 0 0 3vmin 0 $b;
+    box-shadow: 0 0 1vmin 0 $wh, 0 0 2vmin 0 $bu, 0 0 2.2vmin 0 $bu, 0 0 3vmin 0 $bu;
     z-index: 10;
   }
 
@@ -112,7 +111,7 @@ body {
       top: 0;
       left: 37.5%;
       border-radius: 25% 25% 5% 5%;
-      box-shadow: 0 0 0.5vmin 0 $wh, 0 0 2vmin 0 $b, 0 0 4vmin 0 $b;
+      box-shadow: 0 0 0.5vmin 0 $wh, 0 0 2vmin 0 $bu, 0 0 4vmin 0 $bu;
 
       // line
       &::before {
@@ -152,7 +151,7 @@ body {
       }
 
       &::before {
-        border-bottom: 6vmin solid $b;
+        border-bottom: 6vmin solid $bu;
       }
 
       &::after {
@@ -163,12 +162,12 @@ body {
 
   // shadow
   &__shadow {
-    @include w-h( 92%, 78% );
+    @include w-h( 94%, 78% );
     border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
     background-color: $sd;
     position: absolute;
     bottom: 2%;
-    left: 4%;
+    left: 3.2%;
   }
 }
 
@@ -205,5 +204,61 @@ body {
   &__r {
     left: 60.5%;
     transform: rotate( 195deg );
+  }
+}
+
+.neck {
+  @include w-h( 24%, 8% );
+  background-color: $yd;
+  position: absolute;
+  border-radius: 35% 35% 0 0;
+  top: 39.5%;
+
+  // neck
+  &::before {
+    @include pseduo-div( 50%, 50%, $sd );
+    border-radius: 0 0 50% 50%;
+    top: 36.5%;
+    left: 24%;
+  }
+}
+
+.torso {
+  // sash
+  @include w-h( 22%, 5% );
+  background-color: $rl;
+  position: absolute;
+  border-radius: 0 0 40% 40%;
+  top: 56.5%;
+  left: 40%;
+
+  // body
+  &::after {
+    @include pseduo-div( 120%, 240%, $yd );
+    position: absolute;
+    border-radius: 0 0 30% 30%;
+    top: -180%;
+    left: -15%;
+  }
+}
+
+.leg {
+  &__l,
+  &__r {
+    @include w-h( 18%, 22% );
+    background-color: $yd;
+    position: absolute;
+    top: 60%;
+    border-radius: 20% 20% 60% 60% / 20%;
+  }
+
+  &__l {
+    left: 35%;
+    transform: rotate( 10deg );
+  }
+
+  &__r {
+    left: 49%;
+    transform: rotate( -10deg );
   }
 }
