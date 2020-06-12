@@ -60,9 +60,10 @@ body {
 }
 
 .sign {
-  background-color: darken( $wh, 2 );
   @include w-h( 55%, 20% );
   position: relative;
+  transform: rotate( -2deg );
+  background: linear-gradient( 165deg, darken( $wh, 9 ) 65%, darken( $wh, 2 ) 66% );
 
   svg {
     @include w-h( 90%, 90% );
@@ -230,7 +231,7 @@ body {
   position: absolute;
   border-radius: 0 0 40% 40%;
   top: 56.5%;
-  left: 40%;
+  left: 39%;
 
   // body
   &::after {
@@ -238,7 +239,7 @@ body {
     position: absolute;
     border-radius: 0 0 30% 30%;
     top: -180%;
-    left: -15%;
+    left: -10%;
   }
 }
 
@@ -258,7 +259,7 @@ body {
   }
 
   &__r {
-    left: 49%;
+    left: 48%;
     transform: rotate( -10deg );
   }
 }
