@@ -44,11 +44,11 @@ body {
 }
 
 .sign {
-  width: 55%;
-  height: 20%;
+  width: 65%;
+  height: 22%;
   position: relative;
-  -webkit-transform: rotate(-2deg);
-          transform: rotate(-2deg);
+  -webkit-transform: rotate(-2.5deg);
+          transform: rotate(-2.5deg);
   background: linear-gradient(165deg, #e8e8e8 65%, #fafafa 66%);
 }
 
@@ -63,7 +63,7 @@ body {
 }
 
 .head {
-  margin-top: 10%;
+  margin-top: 8%;
   width: 25%;
   height: 18%;
   border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
@@ -220,7 +220,7 @@ body {
   height: 8%;
   background-color: #deb563;
   position: absolute;
-  border-radius: 35% 35% 0 0;
+  border-radius: 30% 30% 0 0;
   top: 39.5%;
 }
 
@@ -234,6 +234,17 @@ body {
   border-radius: 0 0 50% 50%;
   top: 36.5%;
   left: 24%;
+}
+
+.collar {
+  width: 5%;
+  height: 5%;
+  background-color: #964a33;
+  position: absolute;
+  top: 42.5%;
+  left: 39%;
+  -webkit-transform: rotate(-50deg) skewY(-40deg);
+          transform: rotate(-50deg) skewY(-40deg);
 }
 
 .torso {
@@ -278,4 +289,19 @@ body {
   left: 48%;
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
+}
+
+.arm__l, .arm__r {
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 50%;
+  top: 44%;
+  border-top: 20vmin solid transparent;
+}
+
+.arm__l {
+  border-left: 10vmin solid transparent;
+  border-right: 10vmin solid #a45216;
+  left: -30%;
 }

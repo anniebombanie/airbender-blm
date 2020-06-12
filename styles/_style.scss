@@ -9,7 +9,7 @@ html {
 /* --- Colours --- */
 $sl: #fedbbb;
 $sd: #d1a47b;
-$ol: #d5a77d;
+$ol: #eb6d21;
 $od: #a45216;
 $yl: #ffd75e;
 $yd: #deb563;
@@ -60,9 +60,9 @@ body {
 }
 
 .sign {
-  @include w-h( 55%, 20% );
+  @include w-h( 65%, 22% );
   position: relative;
-  transform: rotate( -2deg );
+  transform: rotate( -2.5deg );
   background: linear-gradient( 165deg, darken( $wh, 9 ) 65%, darken( $wh, 2 ) 66% );
 
   svg {
@@ -75,7 +75,7 @@ body {
 }
 
 .head {
-  margin-top: 10%;
+  margin-top: 8%;
   @include w-h( 25%, 18% );
   border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
   position: relative;
@@ -212,7 +212,7 @@ body {
   @include w-h( 24%, 8% );
   background-color: $yd;
   position: absolute;
-  border-radius: 35% 35% 0 0;
+  border-radius: 30% 30% 0 0;
   top: 39.5%;
 
   // neck
@@ -222,6 +222,15 @@ body {
     top: 36.5%;
     left: 24%;
   }
+}
+
+.collar {
+  @include w-h( 5%, 5% );
+  background-color: $rl;
+  position: absolute;
+  top: 42.5%;
+  left: 39%;
+  transform: rotate( -50deg ) skewY( -40deg );
 }
 
 .torso {
@@ -262,4 +271,56 @@ body {
     left: 48%;
     transform: rotate( -10deg );
   }
+}
+
+// .cloak {
+//   @include w-h( 60%, 35% );
+//   border-radius: 50%;
+//   position: absolute;
+//   top: 30%;
+//   // border: 1px solid $wh;
+//   overflow: hidden;
+
+//   &::before,
+//   &::after {
+//     @include pseduo-div( 90%, 100%, $od );
+//     top: 12%;
+//     // border: 1px solid $wh;
+//   }
+
+//   &::before {
+//     left: -55%;
+//     transform: rotate( 50deg );
+//   }
+
+//   &::after {
+//     left: 65%;
+//     transform: rotate( -50deg );
+//   }
+// }
+
+.arm {
+  &__l,
+  &__r {
+    @include w-h( 0, 0 );
+    position: absolute;
+    right: 50%;
+    top: 44%;
+    border-top: 20vmin solid $t;
+    // border-radius: 50%;
+  }
+
+  &__l {
+    border-left: 10vmin solid $t;
+    border-right: 10vmin solid $od;
+    // transform: rotate( -45deg );
+    left: -30%;
+  }
+
+  // &__r {
+  //   border-left: 20vmin solid $od;
+  //   border-right: 20vmin solid $t;
+  //   transform: rotate( 45deg );
+  //   left: 50%;
+  // }
 }
