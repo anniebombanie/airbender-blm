@@ -217,9 +217,9 @@ body {
 
   // neck
   &::before {
-    @include pseduo-div( 50%, 50%, $sd );
+    @include pseduo-div( 50%, 60%, $sd );
     border-radius: 0 0 50% 50%;
-    top: 36.5%;
+    top: 40%;
     left: 24%;
   }
 }
@@ -227,34 +227,34 @@ body {
 .collar {
   &__r,
   &__l {
-    @include w-h( 8%, 6% );
+    @include w-h( 9%, 6% );
     position: absolute;
     top: 42%;
 
     &::after {
-      @include pseduo-div( 52%, 60%, null );
+      @include pseduo-div( 45%, 57%, null );
       top: 43%;
+    }
+  }
+
+  &__l {
+    background: linear-gradient( 26deg, $t 28%, $yl calc( 28% + 1px ), $yl 70%, $t calc( 70% + 1px ));
+    left: 38%;
+
+    &::after {
+      left: 100%;
       // border: 1px solid white;
+      background: linear-gradient( 60deg, $yl 49%, $t 50% );
     }
   }
 
   &__r {
     background: linear-gradient( -30deg, $t 28%, $yl calc( 28% + 1px ), $yl 70%, $t calc( 70% + 1px ));
-    left: 54%;
+    left: 53%;
 
     &::after {
-      left: -53%;
-      background: linear-gradient( -56deg, $yl 50%, $t 51% );
-    }
-  }
-
-  &__l {
-    background: linear-gradient( 30deg, $t 28%, $yl calc( 28% + 1px ), $yl 70%, $t calc( 70% + 1px ));
-    left: 38%;
-
-    &::after {
-      left: 100%;
-      background: linear-gradient( 56deg, $yl 50%, $t 51% );
+      left: -40%;
+      background: linear-gradient( -60deg, $yl 50%, $t 51% );
     }
   }
 }

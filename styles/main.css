@@ -227,17 +227,17 @@ body {
 .neck::before {
   content: '';
   width: 50%;
-  height: 50%;
+  height: 60%;
   display: block;
   position: absolute;
   background-color: #d1a47b;
   border-radius: 0 0 50% 50%;
-  top: 36.5%;
+  top: 40%;
   left: 24%;
 }
 
 .collar__r, .collar__l {
-  width: 8%;
+  width: 9%;
   height: 6%;
   position: absolute;
   top: 42%;
@@ -245,31 +245,31 @@ body {
 
 .collar__r::after, .collar__l::after {
   content: '';
-  width: 52%;
-  height: 60%;
+  width: 45%;
+  height: 57%;
   display: block;
   position: absolute;
   top: 43%;
 }
 
-.collar__r {
-  background: linear-gradient(-30deg, transparent 28%, #ffd75e calc( 28% + 1px), #ffd75e 70%, transparent calc( 70% + 1px));
-  left: 54%;
-}
-
-.collar__r::after {
-  left: -53%;
-  background: linear-gradient(-56deg, #ffd75e 50%, transparent 51%);
-}
-
 .collar__l {
-  background: linear-gradient(30deg, transparent 28%, #ffd75e calc( 28% + 1px), #ffd75e 70%, transparent calc( 70% + 1px));
+  background: linear-gradient(26deg, transparent 28%, #ffd75e calc( 28% + 1px), #ffd75e 70%, transparent calc( 70% + 1px));
   left: 38%;
 }
 
 .collar__l::after {
   left: 100%;
-  background: linear-gradient(56deg, #ffd75e 50%, transparent 51%);
+  background: linear-gradient(60deg, #ffd75e 49%, transparent 50%);
+}
+
+.collar__r {
+  background: linear-gradient(-30deg, transparent 28%, #ffd75e calc( 28% + 1px), #ffd75e 70%, transparent calc( 70% + 1px));
+  left: 53%;
+}
+
+.collar__r::after {
+  left: -40%;
+  background: linear-gradient(-60deg, #ffd75e 50%, transparent 51%);
 }
 
 .torso {
