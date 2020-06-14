@@ -56,7 +56,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  background: url('../resources/drawing.jpg') 150% 0% no-repeat;
+  // background: url('../resources/drawing.jpg') 150% 0% no-repeat;
   background-size: auto 101%;
 }
 
@@ -245,8 +245,14 @@ body {
 
     &::after {
       left: 100%;
-      // border: 1px solid white;
       background: linear-gradient( 60deg, $ym 49%, $t 50% );
+    }
+
+    &::before {
+      @include pseduo-div( 66%, 16%, $ym );
+      top: 88%;
+      left: 100%;
+      border-radius: 50%;
     }
   }
 
@@ -340,12 +346,16 @@ body {
   &__l,
   &__r {
     @include w-h( 18%, 22% );
+    background: $rl;
+    position: absolute;
+    left: 70%;
+    top: 60%;
 
     // pants
     &::before {
-      @include pseduo-div( 17%, 22%, $ym );
+      @include pseduo-div( 100%, 100%, $ym );
       position: absolute;
-      top: 60%;
+      top: 0;
       // border: 1px dashed green;
       border-radius: 20% 20% 60% 60% / 20%;
     }
@@ -353,7 +363,7 @@ body {
 
   &__l {
     &::before {
-      left: 35%;
+      left: 0;
       transform: rotate( 10deg );
     }
   }
