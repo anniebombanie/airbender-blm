@@ -66,7 +66,7 @@ body {
   margin-top: 8%;
   width: 25%;
   height: 18%;
-  border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+  border-radius: 50% / 40% 40% 60% 60%;
   position: relative;
   overflow: hidden;
   background: #fedbbb;
@@ -170,7 +170,7 @@ body {
 .head__shadow {
   width: 94%;
   height: 78%;
-  border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+  border-radius: 50% / 40% 40% 60% 60%;
   background-color: #d1a47b;
   position: absolute;
   bottom: 2%;
@@ -178,7 +178,7 @@ body {
 }
 
 .ear__l, .ear__r, .ear__l::before, .ear__r::before {
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  border-radius: 50% / 60% 60% 40% 40%;
 }
 
 .ear__l, .ear__r {
@@ -288,35 +288,35 @@ body {
 }
 
 .cloak {
-  width: 60%;
+  width: 56%;
   height: 35%;
-  border-radius: 50%;
+  border-radius: 50% / 40% 40% 60% 60%;
   position: absolute;
-  top: 30%;
+  top: 31%;
   overflow: hidden;
 }
 
 .cloak::before, .cloak::after {
   content: '';
   width: 80%;
-  height: 90%;
+  height: 80%;
   display: block;
   position: absolute;
-  top: 20%;
+  top: 19%;
 }
 
 .cloak::before {
-  left: -52%;
-  background: radial-gradient(2% 4% at 83% 9%, #a45216 4vmin, transparent calc( 4vmin + 1px)), -webkit-gradient(linear, left top, right top, color-stop(80%, #a45216), color-stop(80.5%, transparent));
-  background: radial-gradient(2% 4% at 83% 9%, #a45216 4vmin, transparent calc( 4vmin + 1px)), linear-gradient(90deg, #a45216 80%, transparent 80.5%);
+  left: -49%;
+  background: radial-gradient(2% 4% at 80% 12%, #a45216 4vmin, transparent calc( 4vmin + 1px)), -webkit-gradient(linear, left top, right top, color-stop(80%, #a45216), color-stop(80.5%, transparent));
+  background: radial-gradient(2% 4% at 80% 12%, #a45216 4vmin, transparent calc( 4vmin + 1px)), linear-gradient(90deg, #a45216 80%, transparent 80.5%);
   -webkit-transform: rotate(50deg);
           transform: rotate(50deg);
 }
 
 .cloak::after {
-  left: 72%;
-  background: radial-gradient(2% 4% at 17% 11%, #a45216 4vmin, transparent calc( 4vmin + 1px)), -webkit-gradient(linear, right top, left top, color-stop(80%, #a45216), color-stop(80.5%, transparent));
-  background: radial-gradient(2% 4% at 17% 11%, #a45216 4vmin, transparent calc( 4vmin + 1px)), linear-gradient(-90deg, #a45216 80%, transparent 80.5%);
+  left: 69%;
+  background: radial-gradient(2% 4% at 20% 11%, #a45216 4vmin, transparent calc( 4vmin + 1px)), -webkit-gradient(linear, right top, left top, color-stop(80%, #a45216), color-stop(80.5%, transparent));
+  background: radial-gradient(2% 4% at 20% 11%, #a45216 4vmin, transparent calc( 4vmin + 1px)), linear-gradient(-90deg, #a45216 80%, transparent 80.5%);
   -webkit-transform: rotate(-50deg);
           transform: rotate(-50deg);
 }
@@ -352,49 +352,69 @@ body {
   left: 39%;
 }
 
-.torso::after {
+.torso::before {
   content: '';
   width: 120%;
-  height: 240%;
+  height: 220%;
   display: block;
   position: absolute;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(42%, #a45216), color-stop(43%, #deb563));
-  background: linear-gradient(#a45216 42%, #deb563 43%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(37%, #a45216), color-stop(37.5%, #deb563));
+  background: linear-gradient(#a45216 37%, #deb563 37.5%);
   position: absolute;
-  border-radius: 0 0 30% 30%;
+  border-radius: 0 0 15% 15%;
   top: -180%;
   left: -10%;
 }
 
+.torso::after {
+  content: '';
+  width: 110%;
+  height: 60%;
+  display: block;
+  position: absolute;
+  background: #deb563;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: -5%;
+}
+
 .leg__l, .leg__r {
-  width: 18%;
+  width: 8%;
   height: 22%;
   background: #964a33;
   position: absolute;
-  left: 70%;
-  top: 60%;
+  top: 70%;
 }
 
 .leg__l::before, .leg__r::before {
   content: '';
-  width: 100%;
+  width: 200%;
   height: 100%;
   display: block;
   position: absolute;
   background: #deb563;
   position: absolute;
-  top: 0;
+  top: -44%;
   border-radius: 20% 20% 60% 60% / 20%;
 }
 
+.leg__l {
+  left: 46%;
+}
+
 .leg__l::before {
-  left: 0;
+  left: -150%;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
 }
 
+.leg__r {
+  left: 47%;
+}
+
 .leg__r::before {
-  left: 48%;
+  left: 46%;
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
 }
