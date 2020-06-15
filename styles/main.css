@@ -315,8 +315,7 @@ body {
 
 .cloak::after {
   left: 69%;
-  background: radial-gradient(2% 4% at 24% 8%, #a45216 4.6vmin, transparent 4.7vmin), -webkit-gradient(linear, right top, left top, color-stop(80%, #a45216), color-stop(80.5%, transparent));
-  background: radial-gradient(2% 4% at 24% 8%, #a45216 4.6vmin, transparent 4.7vmin), linear-gradient(-90deg, #a45216 80%, transparent 80.5%);
+  background: linear-gradient(5deg, transparent 96%, #eb6d21 96.5%), radial-gradient(2% 4% at 24% 8%, #a45216 4.6vmin, transparent 4.7vmin), linear-gradient(-90deg, #a45216 80%, transparent 80.5%);
   -webkit-transform: rotate(-50deg);
           transform: rotate(-50deg);
 }
@@ -341,6 +340,8 @@ body {
 .arm__l {
   top: 21.1%;
   left: 15%;
+  -webkit-box-shadow: inset -0.5vmin 0vmin 0 #ffd75e;
+          box-shadow: inset -0.5vmin 0vmin 0 #ffd75e;
   -webkit-transform: rotate(7deg);
           transform: rotate(7deg);
   border-radius: 50% 50% 0 30% / 60% 60% 0 30%;
@@ -350,9 +351,11 @@ body {
   left: 27%;
   -webkit-transform: rotate(-46deg);
           transform: rotate(-46deg);
+  -webkit-box-shadow: inset 0 0.5vmin 0 0 #deb563;
+          box-shadow: inset 0 0.5vmin 0 0 #deb563;
   border-radius: 50% 50% 40% 0 / 70% 50% 40% 0;
-  background: radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), -webkit-gradient(linear, left top, right top, color-stop(60%, transparent), color-stop(61%, #a45216), color-stop(85%, #a45216), color-stop(86%, #eb6d21)), radial-gradient(4% 1% at 50% 77%, #deb563 4vmin, transparent 4.2vmin), radial-gradient(4% 1% at 50% 60%, #a45216 4vmin, transparent 4.2vmin);
-  background: radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), linear-gradient(90deg, transparent 60%, #a45216 61%, #a45216 85%, #eb6d21 86%), radial-gradient(4% 1% at 50% 77%, #deb563 4vmin, transparent 4.2vmin), radial-gradient(4% 1% at 50% 60%, #a45216 4vmin, transparent 4.2vmin);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(33%, #deb563), color-stop(34%, transparent)), radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), -webkit-gradient(linear, left top, right top, color-stop(60%, transparent), color-stop(61%, #a45216), color-stop(85%, #a45216), color-stop(86%, #eb6d21)), radial-gradient(4% 1% at 50% 77%, #deb563 4vmin, transparent 4.2vmin), radial-gradient(4% 1% at 50% 60%, #a45216 4vmin, transparent 4.2vmin);
+  background: linear-gradient(#deb563 33%, transparent 34%), radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), linear-gradient(90deg, transparent 60%, #a45216 61%, #a45216 85%, #eb6d21 86%), radial-gradient(4% 1% at 50% 77%, #deb563 4vmin, transparent 4.2vmin), radial-gradient(4% 1% at 50% 60%, #a45216 4vmin, transparent 4.2vmin);
 }
 
 .arm__r {
