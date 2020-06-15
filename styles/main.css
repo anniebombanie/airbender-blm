@@ -255,7 +255,7 @@ body {
 }
 
 .collar__l {
-  background: linear-gradient(26deg, #a45216 28%, #deb563 calc( 28% + 1px), #deb563 70%, transparent calc( 70% + 1px));
+  background: linear-gradient(26deg, #a45216 28%, #deb563 calc( 28% + 1px), #deb563 68%, #ffd75e 70%, transparent calc( 70% + 1px));
   left: 38%;
   border-radius: 0 0 0 100% / 0 0 0 60%;
 }
@@ -278,7 +278,7 @@ body {
 }
 
 .collar__r {
-  background: linear-gradient(-26deg, #a45216 28%, #deb563 calc( 28% + 1px), #deb563 70%, transparent calc( 70% + 1px));
+  background: linear-gradient(-26deg, #a45216 28%, #deb563 calc( 28% + 1px), #deb563 68%, #ffd75e 70%, transparent calc( 70% + 1px));
   left: 53%;
   border-radius: 0 0 100% 0 / 0 0 60% 0;
 }
@@ -308,8 +308,7 @@ body {
 
 .cloak::before {
   left: -42%;
-  background: radial-gradient(2% 4% at 80% 5%, #a45216 4.6vmin, transparent 4.7vmin), -webkit-gradient(linear, left top, right top, color-stop(80%, #a45216), color-stop(80.5%, transparent));
-  background: radial-gradient(2% 4% at 80% 5%, #a45216 4.6vmin, transparent 4.7vmin), linear-gradient(90deg, #a45216 80%, transparent 80.5%);
+  background: linear-gradient(-5deg, transparent 96%, #eb6d21 96.5%), radial-gradient(2% 4% at 77% 6%, #a45216 4.6vmin, transparent 4.7vmin), linear-gradient(90deg, #a45216 80%, transparent 80.5%);
   -webkit-transform: rotate(50deg);
           transform: rotate(50deg);
 }
@@ -351,8 +350,9 @@ body {
   left: 27%;
   -webkit-transform: rotate(-46deg);
           transform: rotate(-46deg);
-  background: radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), -webkit-gradient(linear, left top, right top, color-stop(60%, transparent), color-stop(61%, #a45216)), radial-gradient(4% 1% at 50% 77%, #deb563 4vmin, transparent 4.2vmin), radial-gradient(4% 1% at 50% 60%, #a45216 4vmin, transparent 4.2vmin);
-  background: radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), linear-gradient(90deg, transparent 60%, #a45216 61%), radial-gradient(4% 1% at 50% 77%, #deb563 4vmin, transparent 4.2vmin), radial-gradient(4% 1% at 50% 60%, #a45216 4vmin, transparent 4.2vmin);
+  border-radius: 50% 50% 40% 0 / 70% 50% 40% 0;
+  background: radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), -webkit-gradient(linear, left top, right top, color-stop(60%, transparent), color-stop(61%, #a45216), color-stop(85%, #a45216), color-stop(86%, #eb6d21)), radial-gradient(4% 1% at 50% 77%, #deb563 4vmin, transparent 4.2vmin), radial-gradient(4% 1% at 50% 60%, #a45216 4vmin, transparent 4.2vmin);
+  background: radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), linear-gradient(90deg, transparent 60%, #a45216 61%, #a45216 85%, #eb6d21 86%), radial-gradient(4% 1% at 50% 77%, #deb563 4vmin, transparent 4.2vmin), radial-gradient(4% 1% at 50% 60%, #a45216 4vmin, transparent 4.2vmin);
 }
 
 .arm__r {
@@ -389,7 +389,7 @@ body {
 
 .torso::after {
   content: '';
-  width: 110%;
+  width: 108%;
   height: 60%;
   display: block;
   position: absolute;
@@ -397,7 +397,7 @@ body {
   position: absolute;
   border-radius: 50%;
   top: 5%;
-  left: -5%;
+  left: -4%;
 }
 
 .leg__l, .leg__r {
