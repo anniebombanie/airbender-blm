@@ -320,7 +320,6 @@ body {
     // hand
     &::after {
       @include pseduo-div( 70%, 35%, $sl );
-      // border-radius: 50% 50% 0 60% / 50% 50% 10% 60%;
       top: -25%;
       transform: rotate( -95deg );
     }
@@ -386,9 +385,8 @@ body {
     }
 
     &::after {
-      // @include pseduo-div( 100%, 40%, green );
       border-radius: 20% 20% 10% 80% / 30% 10% 10% 90%;
-      left: -3%;
+      left: -4%;
       transform: rotate( -15deg );
     }
   }
@@ -400,12 +398,23 @@ body {
   &__r {
     @include w-h( 7%, 1.4% );
     position: absolute;
+  }
+
+  &__l {
     top: 21.8%;
     left: 17.4%;
     transform: rotate( 5deg );
     border-radius: 10% 10% 30% 30%;
-    // border: 1px dashed green;
-    // background-color: blue;
+    background:
+      linear-gradient( 80deg, $t 9%, $ym 12%, $ym 80%, $t 81% ),
+      linear-gradient( -80deg, $t 5%, $ym 7%, $ym 80%, $t 81% );
+  }
+
+  &__r {
+    top: 21%;
+    left: 76%;
+    transform: rotate( -5deg );
+    border-radius: 10% 10% 30% 30%;
     background:
       linear-gradient( 80deg, $t 9%, $ym 12%, $ym 80%, $t 81% ),
       linear-gradient( -80deg, $t 5%, $ym 7%, $ym 80%, $t 81% );
