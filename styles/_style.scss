@@ -307,38 +307,40 @@ body {
 .arm {
   &__l,
   &__r {
-    @include w-h( 10%, 15% );
+    @include w-h( 8.8%, 15% );
     background-color: $ym;
     position: absolute;
 
     &::before {
       // border: 1px dashed green;
-      @include pseduo-div( 100%, 66%, null );
+      @include pseduo-div( 102%, 66%, null );
       border-radius: 50% 0 40% 0 / 70% 0 40% 0;
       top: 70%;
     }
 
+    // hand
     &::after {
-      @include pseduo-div( 70%, 40%, green );
+      @include pseduo-div( 70%, 40%, $ym );
       // border-radius: 50% 50% 0 60% / 50% 50% 10% 60%;
       top: -25%;
-      transform: rotate( -15deg );
+      transform: rotate( -95deg );
+      // border: 1px dashed green;
     }
   }
 
   &__l {
-    top: 21.1%;
-    left: 15%;
-    box-shadow: inset -0.7vmin 0vmin 0 $yl;
+    top: 21.2%;
+    left: 16%;
+    // box-shadow: inset -0.7vmin 0vmin 0 $yl;
     // border: 1px dashed green;
     transform: rotate( 7deg );
-    border-radius: 50% 50% 0 30% / 60% 60% 0 30%;
+    border-radius: 30% 50% 0 30% / 30% 70% 0 30%;
 
     &::before {
-      left: 27%;
+      left: 33%;
       transform: rotate( -46deg );
       box-shadow: inset 0 0.5vmin 0 0 $ym;
-      border-radius: 50% 50% 40% 0 / 70% 50% 40% 0;
+      border-radius: 50% 50% 30% 0 / 70% 50% 40% 0;
       background:
       linear-gradient( $ym 33%, $t 34% ),
       radial-gradient( 4% 1% at 50% 60%, $t 4vmin, $ym 4.2vmin ),
@@ -349,7 +351,7 @@ body {
 
     &::after {
       // @include pseduo-div( 100%, 40%, green );
-      border-radius: 30% 20% 20% 60% / 30% 20% 20% 90%;
+      border-radius: 30% 20% 10% 80% / 30% 20% 10% 90%;
       left: -5%;
       transform: rotate( -15deg );
     }
@@ -360,6 +362,17 @@ body {
     left: 73.5%;
     border-radius: 50% 50% 80% 40% / 60% 60% 40% 40%;
     transform: rotate( -3deg );
+  }
+}
+
+.fingers {
+  &__l,
+  &__r {
+    @include w-h( 10%, 6% );
+    background-color: $rl;
+    position: absolute;
+    top: 15%;
+    left: 15%;
   }
 }
 
