@@ -252,7 +252,7 @@ body {
     // center bottom curve
     &::before {
       @include pseduo-div( 66%, 16%, $ym );
-      top: 89%;
+      top: 89.5%;
       left: 100%;
       border-radius: 50%;
     }
@@ -392,7 +392,6 @@ body {
   }
 }
 
-// sleeve
 .sleeve {
   &__l,
   &__r {
@@ -453,7 +452,7 @@ body {
   // body
   &::before {
     @include pseduo-div( 130%, 220%, null );
-    background: linear-gradient( $od 30%, $ym 30.5% );
+    background: linear-gradient( $od 30%, $yd 30.5% );
     position: absolute;
     border-radius: 0 0 15% 15% / 50%;
     top: -170%;
@@ -461,12 +460,38 @@ body {
   }
 
   &::after {
-    @include pseduo-div( 108%, 60%, $ym );
+    @include pseduo-div( 108%, 60%, $yd );
     position: absolute;
     border-radius: 50%;
-    // border: 1px solid green;
     top: 5%;
     left: -4%;
+  }
+
+  &__depth {
+    @include w-h( 26%, 10% );
+    background-color: $ym;
+    position: absolute;
+    border-radius: 0 0 35% 35%;
+    top: 51.5%;
+    left: 37%;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+      @include pseduo-div( 120%, 60%, $yd );
+      top: -5%;
+      border-radius: 50%;
+    }
+
+    &::before {
+      left: -59%;
+      transform: rotate( -33deg );
+    }
+
+    &::after {
+      left: 37%;
+      transform: rotate( 33deg );
+    }
   }
 }
 
@@ -506,5 +531,23 @@ body {
     &::before {
       left: -50%;
     }
+  }
+}
+
+.shoe {
+  &__l,
+  &__r {
+    @include w-h( 9%, 6% );
+    position: absolute;
+    background: red;
+    top: 92%;
+  }
+
+  &__l {
+    left: 32%;
+  }
+
+  &__r {
+    left: 60%;
   }
 }

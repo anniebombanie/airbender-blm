@@ -272,7 +272,7 @@ body {
   display: block;
   position: absolute;
   background: #deb563;
-  top: 89%;
+  top: 89.5%;
   left: 100%;
   border-radius: 50%;
 }
@@ -456,8 +456,8 @@ body {
   height: 220%;
   display: block;
   position: absolute;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #a45216), color-stop(30.5%, #deb563));
-  background: linear-gradient(#a45216 30%, #deb563 30.5%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #a45216), color-stop(30.5%, #a18348));
+  background: linear-gradient(#a45216 30%, #a18348 30.5%);
   position: absolute;
   border-radius: 0 0 15% 15% / 50%;
   top: -170%;
@@ -470,11 +470,45 @@ body {
   height: 60%;
   display: block;
   position: absolute;
-  background: #deb563;
+  background: #a18348;
   position: absolute;
   border-radius: 50%;
   top: 5%;
   left: -4%;
+}
+
+.torso__depth {
+  width: 26%;
+  height: 10%;
+  background-color: #deb563;
+  position: absolute;
+  border-radius: 0 0 35% 35%;
+  top: 51.5%;
+  left: 37%;
+  overflow: hidden;
+}
+
+.torso__depth::before, .torso__depth::after {
+  content: '';
+  width: 120%;
+  height: 60%;
+  display: block;
+  position: absolute;
+  background: #a18348;
+  top: -5%;
+  border-radius: 50%;
+}
+
+.torso__depth::before {
+  left: -59%;
+  -webkit-transform: rotate(-33deg);
+          transform: rotate(-33deg);
+}
+
+.torso__depth::after {
+  left: 37%;
+  -webkit-transform: rotate(33deg);
+          transform: rotate(33deg);
 }
 
 .leg__l, .leg__r {
@@ -517,4 +551,20 @@ body {
 
 .leg__r::before {
   left: -50%;
+}
+
+.shoe__l, .shoe__r {
+  width: 9%;
+  height: 6%;
+  position: absolute;
+  background: red;
+  top: 92%;
+}
+
+.shoe__l {
+  left: 32%;
+}
+
+.shoe__r {
+  left: 60%;
 }
