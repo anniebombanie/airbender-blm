@@ -40,8 +40,9 @@ $t: transparent;
 
 body {
   margin: 0;
-  // background: linear-gradient( $peach, $y, $white );
-  background: $n;
+  background:
+    // linear-gradient( -10deg, darken( $n, 9 ), $t ),
+    linear-gradient( darken( $n, 9 ), $n 20%, $n 60%, lighten( $n, 8 ) 99% );
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -81,6 +82,7 @@ body {
   border-radius: 50% / 40% 40% 60% 60%;
   position: absolute;
   top: 27%;
+  left: 38.8%;
   overflow: hidden;
   background: $sl;
 
@@ -196,7 +198,7 @@ body {
   }
 
   &__l {
-    left: 36%;
+    left: 35.5%;
     transform: rotate( -195deg );
 
     &::before {
@@ -208,7 +210,7 @@ body {
   }
 
   &__r {
-    left: 59.5%;
+    left: 59%;
     transform: rotate( 195deg );
 
     &::before {
@@ -220,17 +222,18 @@ body {
 }
 
 .neck {
-  @include w-h( 23%, 8% );
+  @include w-h( 21%, 7.5% );
   background: linear-gradient( 180deg, $yd 25%, $od);
   position: absolute;
-  border-radius: 32% 32% 0 0;
-  top: 38%;
+  border-radius: 22% 22% 0 0;
+  top: 39.5%;
+  left: 39.2%;
 
   // neck
   &::before {
     @include pseduo-div( 50%, 60%, $sd );
     border-radius: 0 0 50% 50%;
-    top: 40%;
+    top: 24%;
     left: 24%;
   }
 }
@@ -238,43 +241,43 @@ body {
 .collar {
   &__r,
   &__l {
-    @include w-h( 8%, 6% );
+    @include w-h( 7.2%, 6% );
     position: absolute;
-    top: 40%;
+    top: 40.2%;
 
     &::after {
       @include pseduo-div( 45%, 53%, null );
-      top: 43%;
+      top: 39%;
     }
   }
 
   &__l {
     background: linear-gradient( 26deg, $od 28%, $ym calc( 28% + 1px ), $ym 68%, $yl 70%, $t calc( 70% + 1px ));
-    left: 38.5%;
+    left: 39.2%;
     border-radius: 0 0 0 100% / 0 0 0 60%;
 
     &::after {
       left: 100%;
-      background: linear-gradient( 60deg, $ym 49%, $t 50% );
+      background: linear-gradient( 60deg, $ym 48%, $t 49% );
     }
 
     // center bottom curve
     &::before {
-      @include pseduo-div( 80%, 14%, null );
-      top: 88%;
-      left: 104%;
-      background: linear-gradient( $t 50%, $ym 50% );
+      @include pseduo-div( 90%, 14%, null );
+      top: 84.5%;
+      left: 100%;
+      background: linear-gradient( $t 35%, $ym 35% );
       border-radius: 50%;
     }
   }
 
   &__r {
     background: linear-gradient( -26deg, $od 28%, $ym calc( 28% + 1px ), $ym 68%, $yl 70%, $t calc( 70% + 1px ));
-    left: 53.5%;
+    left: 52.8%;
     border-radius: 0 0 100% 0 / 0 0 60% 0;
 
     &::after {
-      left: -45%;
+      left: -44%;
       background: linear-gradient( -58deg, $ym 50%, $t 51% );
     }
   }
@@ -457,7 +460,7 @@ body {
   position: absolute;
   box-shadow: 0 0.5vmin 0 0 $yd;
   border-radius: 0 0 30% 30%;
-  top: 55.5%;
+  top: 55.2%;
   left: 39%;
 
   // body
@@ -480,11 +483,11 @@ body {
   }
 
   &__shadow {
-    @include w-h( 26.5%, 11% );
+    @include w-h( 26.2%, 11% );
     position: absolute;
     border-radius: 0 0 48% 48%;
-    top: 49%;
-    left: 36.7%;
+    top: 48.8%;
+    left: 37%;
     overflow: hidden;
     // border: 1px dotted green;
 
@@ -590,7 +593,7 @@ body {
   }
 
   &__l {
-    left: 33.5%;
+    left: 33.3%;
     transform: rotate( -10deg );
 
     &::before {
@@ -621,5 +624,15 @@ body {
       border-radius: 50% 70% 40% 30%;
       transform: rotate( -8deg );
     }
+  }
+}
+
+.fire {
+  &__front {
+    @include w-h( 58vmin, 58vmin );
+    border: 1px dashed white;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 5%;
   }
 }
