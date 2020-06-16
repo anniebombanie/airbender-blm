@@ -61,7 +61,7 @@ body {
 }
 
 .sign {
-  @include w-h( 58%, 22% );
+  @include w-h( 54%, 22% );
   position: absolute;
   top: -2%;
   transform: rotate( -2.5deg );
@@ -336,8 +336,8 @@ body {
   }
 
   &__l {
-    top: 20.8%;
-    left: 16%;
+    top: 20.2%;
+    left: 18.5%;
     transform: rotate( 7deg );
     border-radius: 40% 40% 0 30% / 40% 70% 0 30%;
     background:
@@ -369,8 +369,8 @@ body {
   }
 
   &__r {
-    top: 20.5%;
-    left: 76.5%;
+    top: 20.2%;
+    left: 74%;
     transform: rotate( -3deg );
     border-radius: 40% 40% 30% 0 / 40% 70% 30% 0;
     background:
