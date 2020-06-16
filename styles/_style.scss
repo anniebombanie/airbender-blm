@@ -445,6 +445,7 @@ body {
   @include w-h( 22%, 6% );
   background-color: $rl;
   position: absolute;
+  box-shadow: 0 1vmin 0 0 $yd;
   border-radius: 0 0 30% 30%;
   top: 57.5%;
   left: 39%;
@@ -522,6 +523,7 @@ body {
       // box-shadow: inset -1vmin 0 0 0 $yd;
       border-radius: 10% 10% 30% 30% / 30% 30% 80% 30%;
       background:
+        radial-gradient( circle at 19% 2%, $yd 1.8vmin, $t 1.9vmin ),
         radial-gradient( 1vmin 2vmin at 35% 40%, $t 5.4vmin, $yd 5.5vmin ),
         $ym;
     }
@@ -536,6 +538,7 @@ body {
       // box-shadow: inset 1vmin 0 0 0 $yd;
       border-radius: 10% 10% 30% 30% / 30% 30% 30% 80%;
       background:
+        radial-gradient( circle at 89% 2%, $yd 1.8vmin, $t 1.9vmin ),
         linear-gradient( $ym 60%, $t 61% ),
         linear-gradient( $ym 60%, $t 61% ),
         radial-gradient( 1vmin 2vmin at 58% 40%, $t 5.4vmin, $yd 5.5vmin ),
