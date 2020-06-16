@@ -347,12 +347,12 @@ body {
 }
 
 .arm__l {
-  top: 21.2%;
+  top: 20.8%;
   left: 16%;
   -webkit-transform: rotate(7deg);
           transform: rotate(7deg);
   border-radius: 40% 40% 0 30% / 40% 70% 0 30%;
-  background: linear-gradient(94deg, transparent 75%, #ffd75e 78%), radial-gradient(4% 1% at 50% 47%, #deb563 4vmin, transparent 4.2vmin), radial-gradient(4% 1% at 50% 39%, #a45216 4vmin, transparent 4.2vmin), #deb563;
+  background: linear-gradient(93deg, transparent 80%, #ffd75e 81%), radial-gradient(4% 1% at 50% 47%, #deb563 4vmin, transparent 4.2vmin), radial-gradient(4% 1% at 50% 39%, #a45216 4vmin, transparent 4.2vmin), #deb563;
 }
 
 .arm__l::before {
@@ -380,7 +380,7 @@ body {
   -webkit-transform: rotate(-3deg);
           transform: rotate(-3deg);
   border-radius: 40% 40% 30% 0 / 40% 70% 30% 0;
-  background: linear-gradient(83deg, #ffd75e 23%, transparent 24%), radial-gradient(4% 1% at 50% 47%, #deb563 4vmin, transparent 4.2vmin), radial-gradient(4% 1% at 50% 39%, #a45216 4vmin, transparent 4.2vmin), #deb563;
+  background: linear-gradient(85deg, #ffd75e 18%, transparent 1%), radial-gradient(4% 1% at 50% 47%, #deb563 4vmin, transparent 4.2vmin), radial-gradient(4% 1% at 50% 39%, #a45216 4vmin, transparent 4.2vmin), #deb563;
 }
 
 .arm__r::before {
@@ -409,7 +409,7 @@ body {
 }
 
 .sleeve__l {
-  top: 21.8%;
+  top: 21.5%;
   left: 17.4%;
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
@@ -445,8 +445,8 @@ body {
   height: 6%;
   background-color: #964a33;
   position: absolute;
-  -webkit-box-shadow: 0 1vmin 0 0 #a18348;
-          box-shadow: 0 1vmin 0 0 #a18348;
+  -webkit-box-shadow: 0 0.5vmin 0 0 #a18348;
+          box-shadow: 0 0.5vmin 0 0 #a18348;
   border-radius: 0 0 30% 30%;
   top: 57.5%;
   left: 39%;
@@ -518,7 +518,7 @@ body {
   height: 22%;
   background: #964a33;
   position: absolute;
-  border-radius: 40%;
+  border-radius: 40% 40% 30% 30%;
   top: 72.6%;
 }
 
@@ -540,9 +540,9 @@ body {
 }
 
 .leg__l::before {
-  left: -50%;
+  left: -48%;
   border-radius: 10% 10% 30% 30% / 30% 30% 80% 30%;
-  background: radial-gradient(circle at 19% 2%, #a18348 1.8vmin, transparent 1.9vmin), radial-gradient(1vmin 2vmin at 35% 40%, transparent 5.4vmin, #a18348 5.5vmin), #deb563;
+  background: radial-gradient(circle at 27% -1.9%, #a18348 2.5vmin, transparent 2.6vmin), radial-gradient(1vmin 2vmin at 35% 40%, transparent 5.4vmin, #a18348 5.5vmin), #deb563;
 }
 
 .leg__r {
@@ -552,24 +552,61 @@ body {
 }
 
 .leg__r::before {
-  left: -50%;
+  left: -52%;
   border-radius: 10% 10% 30% 30% / 30% 30% 30% 80%;
-  background: radial-gradient(circle at 89% 2%, #a18348 1.8vmin, transparent 1.9vmin), -webkit-gradient(linear, left top, left bottom, color-stop(60%, #deb563), color-stop(61%, transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(60%, #deb563), color-stop(61%, transparent)), radial-gradient(1vmin 2vmin at 58% 40%, transparent 5.4vmin, #a18348 5.5vmin), #deb563;
-  background: radial-gradient(circle at 89% 2%, #a18348 1.8vmin, transparent 1.9vmin), linear-gradient(#deb563 60%, transparent 61%), linear-gradient(#deb563 60%, transparent 61%), radial-gradient(1vmin 2vmin at 58% 40%, transparent 5.4vmin, #a18348 5.5vmin), #deb563;
+  background: radial-gradient(circle at 71% -2.2%, #a18348 2.5vmin, transparent 2.6vmin), -webkit-gradient(linear, left top, left bottom, color-stop(60%, #deb563), color-stop(60.5%, transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(60%, #deb563), color-stop(60.5%, transparent)), radial-gradient(1vmin 2vmin at 58% 40%, transparent 5.4vmin, #a18348 5.5vmin), #deb563;
+  background: radial-gradient(circle at 71% -2.2%, #a18348 2.5vmin, transparent 2.6vmin), linear-gradient(#deb563 60%, transparent 60.5%), linear-gradient(#deb563 60%, transparent 60.5%), radial-gradient(1vmin 2vmin at 58% 40%, transparent 5.4vmin, #a18348 5.5vmin), #deb563;
 }
 
 .shoe__l, .shoe__r {
-  width: 9%;
-  height: 6%;
+  width: 6.8%;
+  height: 3%;
   position: absolute;
-  background: red;
-  top: 92%;
+  background: #964a33;
+  top: 93%;
+  border-radius: 50%;
+}
+
+.shoe__l::before, .shoe__r::before {
+  content: '';
+  width: 150%;
+  height: 200%;
+  display: block;
+  position: absolute;
+  position: absolute;
+  top: 60%;
+}
+
+.shoe__l::after, .shoe__r::after {
+  content: '';
+  width: 185%;
+  height: 120%;
+  display: block;
+  position: absolute;
+  background: #964a33;
+  position: absolute;
+  top: 200%;
+  left: -125%;
+  border-radius: 70% 50% 40% 40%;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
 
 .shoe__l {
-  left: 32%;
+  left: 33.5%;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.shoe__l::before {
+  left: -60%;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  background: linear-gradient(77deg, transparent 45%, #964a33 46%, #964a33 82%, transparent 83%), linear-gradient(105deg, transparent 20%, #964a33 21%, #964a33 60%, transparent 60%);
 }
 
 .shoe__r {
   left: 60%;
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
 }
