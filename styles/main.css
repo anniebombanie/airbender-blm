@@ -64,11 +64,11 @@ body {
 }
 
 .head {
-  width: 22.5%;
-  height: 16.2%;
+  width: 21.5%;
+  height: 15.5%;
   border-radius: 50% / 40% 40% 60% 60%;
   position: absolute;
-  top: 26.4%;
+  top: 27%;
   overflow: hidden;
   background: #fedbbb;
 }
@@ -129,7 +129,7 @@ body {
   height: 0;
   display: block;
   position: absolute;
-  top: -10%;
+  top: -15%;
   left: 28%;
   border-bottom: 4.5vmin solid #fff;
   border-left: 4.5vmin solid transparent;
@@ -150,7 +150,7 @@ body {
   height: 0;
   display: block;
   position: absolute;
-  top: -2vmin;
+  top: -2.2vmin;
   left: 0;
   -webkit-filter: blur(0.5vmin);
           filter: blur(0.5vmin);
@@ -201,19 +201,24 @@ body {
 }
 
 .ear__l {
-  left: 35%;
+  left: 35.5%;
   -webkit-transform: rotate(-195deg);
           transform: rotate(-195deg);
 }
 
 .ear__l::before {
-  left: 10%;
+  left: 12%;
+  background: radial-gradient(4% 4% at 8% 40%, #fedbbb 0.3vmin, transparent 0.4vmin), #d1a47b;
 }
 
 .ear__r {
-  left: 60%;
+  left: 59.5%;
   -webkit-transform: rotate(195deg);
           transform: rotate(195deg);
+}
+
+.ear__r::before {
+  background: radial-gradient(4% 4% at 95% 45%, #fedbbb 0.3vmin, transparent 0.4vmin), #d1a47b;
 }
 
 .neck {
