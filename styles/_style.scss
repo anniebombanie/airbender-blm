@@ -77,7 +77,7 @@ body {
 }
 
 .head {
-  @include w-h( 25%, 18% );
+  @include w-h( 22.5%, 16.2% );
   border-radius: 50% / 40% 40% 60% 60%;
   position: absolute;
   top: 26.4%;
@@ -184,7 +184,7 @@ body {
 
   &__l,
   &__r {
-    @include w-h( 6%, 5.5% );
+    @include w-h( 5%, 4.5% );
     background-color: $sl;
     position: absolute;
     top: 33%;
@@ -196,7 +196,7 @@ body {
   }
 
   &__l {
-    left: 33.5%;
+    left: 35%;
     transform: rotate( -195deg );
 
     &::before {
@@ -205,7 +205,7 @@ body {
   }
 
   &__r {
-    left: 60.5%;
+    left: 60%;
     transform: rotate( 195deg );
   }
 }
@@ -215,7 +215,7 @@ body {
   background: linear-gradient( 180deg, $yd 25%, $od);
   position: absolute;
   border-radius: 30% 30% 0 0;
-  top: 39.5%;
+  top: 37.5%;
 
   // neck
   &::before {
@@ -231,7 +231,7 @@ body {
   &__l {
     @include w-h( 9%, 6% );
     position: absolute;
-    top: 42%;
+    top: 40%;
 
     &::after {
       @include pseduo-div( 45%, 57%, null );
@@ -274,7 +274,7 @@ body {
   @include w-h( 58%, 35% );
   border-radius: 50% / 40% 40% 60% 60%;
   position: absolute;
-  top: 31%;
+  top: 29%;
   // border: 1px solid $wh;
   // background: linear-gradient( 180deg, $t 45%, $rl 45%, $rl 52%, $t 52.5%);
   overflow: hidden;
@@ -282,7 +282,7 @@ body {
   &::before,
   &::after {
     @include pseduo-div( 70%, 80%, null );
-    top: 19%;
+    top: 17%;
     // border: 1px solid $wh;
   }
 
@@ -320,7 +320,7 @@ body {
     // hand
     &::after {
       @include pseduo-div( 70%, 35%, $sl );
-      top: -25%;
+      top: -23%;
       transform: rotate( -95deg );
     }
   }
@@ -370,7 +370,7 @@ body {
       $ym;
 
     &::before {
-      top: 75%;
+      top: 73%;
       left: -48%;
       // border: 1px dashed green;
       transform: rotate( 45deg );
@@ -447,7 +447,7 @@ body {
   position: absolute;
   box-shadow: 0 0.5vmin 0 0 $yd;
   border-radius: 0 0 30% 30%;
-  top: 57.5%;
+  top: 55.5%;
   left: 39%;
 
   // body
@@ -456,7 +456,7 @@ body {
     background: linear-gradient( $od 30%, $ym 30.5% );
     position: absolute;
     border-radius: 0 0 15% 15% / 50%;
-    top: -170%;
+    top: -168%;
     left: -15%;
     overflow: hidden;
   }
@@ -465,7 +465,7 @@ body {
     @include pseduo-div( 108%, 60%, $ym );
     position: absolute;
     border-radius: 50%;
-    top: 5%;
+    top: 3%;
     left: -4%;
   }
 
@@ -473,14 +473,14 @@ body {
     @include w-h( 28%, 9% );
     position: absolute;
     border-radius: 0 0 35% 35%;
-    top: 51%;
+    top: 49%;
     left: 36%;
     overflow: hidden;
 
     &::before,
     &::after {
       @include pseduo-div( 120%, 60%, $yd );
-      top: 10%;
+      top: 8%;
       border-radius: 50%;
     }
 
@@ -503,7 +503,7 @@ body {
     background: $rl;
     position: absolute;
     border-radius: 40% 40% 30% 30%;
-    top: 72.6%;
+    top: 70.6%;
 
     // pants
     &::before {

@@ -64,8 +64,8 @@ body {
 }
 
 .head {
-  width: 25%;
-  height: 18%;
+  width: 22.5%;
+  height: 16.2%;
   border-radius: 50% / 40% 40% 60% 60%;
   position: absolute;
   top: 26.4%;
@@ -183,8 +183,8 @@ body {
 }
 
 .ear__l, .ear__r {
-  width: 6%;
-  height: 5.5%;
+  width: 5%;
+  height: 4.5%;
   background-color: #fedbbb;
   position: absolute;
   top: 33%;
@@ -201,7 +201,7 @@ body {
 }
 
 .ear__l {
-  left: 33.5%;
+  left: 35%;
   -webkit-transform: rotate(-195deg);
           transform: rotate(-195deg);
 }
@@ -211,7 +211,7 @@ body {
 }
 
 .ear__r {
-  left: 60.5%;
+  left: 60%;
   -webkit-transform: rotate(195deg);
           transform: rotate(195deg);
 }
@@ -223,7 +223,7 @@ body {
   background: linear-gradient(180deg, #a18348 25%, #a45216);
   position: absolute;
   border-radius: 30% 30% 0 0;
-  top: 39.5%;
+  top: 37.5%;
 }
 
 .neck::before {
@@ -242,7 +242,7 @@ body {
   width: 9%;
   height: 6%;
   position: absolute;
-  top: 42%;
+  top: 40%;
 }
 
 .collar__r::after, .collar__l::after {
@@ -293,7 +293,7 @@ body {
   height: 35%;
   border-radius: 50% / 40% 40% 60% 60%;
   position: absolute;
-  top: 31%;
+  top: 29%;
   overflow: hidden;
 }
 
@@ -303,7 +303,7 @@ body {
   height: 80%;
   display: block;
   position: absolute;
-  top: 19%;
+  top: 17%;
 }
 
 .cloak::before {
@@ -341,7 +341,7 @@ body {
   display: block;
   position: absolute;
   background: #fedbbb;
-  top: -25%;
+  top: -23%;
   -webkit-transform: rotate(-95deg);
           transform: rotate(-95deg);
 }
@@ -384,7 +384,7 @@ body {
 }
 
 .arm__r::before {
-  top: 75%;
+  top: 73%;
   left: -48%;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -448,7 +448,7 @@ body {
   -webkit-box-shadow: 0 0.5vmin 0 0 #a18348;
           box-shadow: 0 0.5vmin 0 0 #a18348;
   border-radius: 0 0 30% 30%;
-  top: 57.5%;
+  top: 55.5%;
   left: 39%;
 }
 
@@ -462,7 +462,7 @@ body {
   background: linear-gradient(#a45216 30%, #deb563 30.5%);
   position: absolute;
   border-radius: 0 0 15% 15% / 50%;
-  top: -170%;
+  top: -168%;
   left: -15%;
   overflow: hidden;
 }
@@ -476,7 +476,7 @@ body {
   background: #deb563;
   position: absolute;
   border-radius: 50%;
-  top: 5%;
+  top: 3%;
   left: -4%;
 }
 
@@ -485,7 +485,7 @@ body {
   height: 9%;
   position: absolute;
   border-radius: 0 0 35% 35%;
-  top: 51%;
+  top: 49%;
   left: 36%;
   overflow: hidden;
 }
@@ -497,7 +497,7 @@ body {
   display: block;
   position: absolute;
   background: #a18348;
-  top: 10%;
+  top: 8%;
   border-radius: 50%;
 }
 
@@ -519,7 +519,7 @@ body {
   background: #964a33;
   position: absolute;
   border-radius: 40% 40% 30% 30%;
-  top: 72.6%;
+  top: 70.6%;
 }
 
 .leg__l::before, .leg__r::before {
