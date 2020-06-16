@@ -131,9 +131,9 @@ body {
   position: absolute;
   top: -10%;
   left: 28%;
-  border-bottom: 5vmin solid #fff;
-  border-left: 5vmin solid transparent;
-  border-top: 5vmin solid transparent;
+  border-bottom: 4.5vmin solid #fff;
+  border-left: 4.5vmin solid transparent;
+  border-top: 4.5vmin solid transparent;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -156,16 +156,16 @@ body {
           filter: blur(0.5vmin);
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  border-left: 6vmin solid transparent;
-  border-top: 6vmin solid transparent;
+  border-left: 5.5vmin solid transparent;
+  border-top: 5.5vmin solid transparent;
 }
 
 .head__arrow--triangle::before {
-  border-bottom: 6vmin solid #8efffd;
+  border-bottom: 5.5vmin solid #8efffd;
 }
 
 .head__arrow--triangle::after {
-  border-bottom: 6vmin solid #fff;
+  border-bottom: 5.5vmin solid #fff;
 }
 
 .head__shadow {
@@ -217,13 +217,13 @@ body {
 }
 
 .neck {
-  width: 24%;
+  width: 23%;
   height: 8%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #a18348), to(#a45216));
   background: linear-gradient(180deg, #a18348 25%, #a45216);
   position: absolute;
-  border-radius: 30% 30% 0 0;
-  top: 37.5%;
+  border-radius: 32% 32% 0 0;
+  top: 38%;
 }
 
 .neck::before {
@@ -239,7 +239,7 @@ body {
 }
 
 .collar__r, .collar__l {
-  width: 9%;
+  width: 8%;
   height: 6%;
   position: absolute;
   top: 40%;
@@ -248,7 +248,7 @@ body {
 .collar__r::after, .collar__l::after {
   content: '';
   width: 45%;
-  height: 57%;
+  height: 53%;
   display: block;
   position: absolute;
   top: 43%;
@@ -256,7 +256,7 @@ body {
 
 .collar__l {
   background: linear-gradient(26deg, #a45216 28%, #deb563 calc( 28% + 1px), #deb563 68%, #ffd75e 70%, transparent calc( 70% + 1px));
-  left: 38%;
+  left: 38.5%;
   border-radius: 0 0 0 100% / 0 0 0 60%;
 }
 
@@ -267,19 +267,20 @@ body {
 
 .collar__l::before {
   content: '';
-  width: 66%;
-  height: 16%;
+  width: 80%;
+  height: 14%;
   display: block;
   position: absolute;
-  background: #deb563;
-  top: 89.5%;
-  left: 100%;
+  top: 88%;
+  left: 104%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #deb563));
+  background: linear-gradient(transparent 50%, #deb563 50%);
   border-radius: 50%;
 }
 
 .collar__r {
   background: linear-gradient(-26deg, #a45216 28%, #deb563 calc( 28% + 1px), #deb563 68%, #ffd75e 70%, transparent calc( 70% + 1px));
-  left: 53%;
+  left: 53.5%;
   border-radius: 0 0 100% 0 / 0 0 60% 0;
 }
 
@@ -293,7 +294,7 @@ body {
   height: 35%;
   border-radius: 50% / 40% 40% 60% 60%;
   position: absolute;
-  top: 29%;
+  top: 29.5%;
   overflow: hidden;
 }
 
@@ -458,11 +459,11 @@ body {
   height: 220%;
   display: block;
   position: absolute;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #a45216), color-stop(30.5%, #deb563));
-  background: linear-gradient(#a45216 30%, #deb563 30.5%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #a45216), color-stop(25.5%, #deb563));
+  background: linear-gradient(#a45216 25%, #deb563 25.5%);
   position: absolute;
   border-radius: 0 0 15% 15% / 50%;
-  top: -168%;
+  top: -160%;
   left: -15%;
   overflow: hidden;
 }
@@ -476,17 +477,17 @@ body {
   background: #deb563;
   position: absolute;
   border-radius: 50%;
-  top: 3%;
+  top: 15%;
   left: -4%;
 }
 
 .torso__shadow {
-  width: 28%;
-  height: 9%;
+  width: 28.8%;
+  height: 11%;
   position: absolute;
-  border-radius: 0 0 35% 35%;
+  border-radius: 0 0 48% 48%;
   top: 49%;
-  left: 36%;
+  left: 35.6%;
   overflow: hidden;
 }
 
@@ -515,7 +516,7 @@ body {
 
 .leg__l, .leg__r {
   width: 9%;
-  height: 22%;
+  height: 24%;
   background: #964a33;
   position: absolute;
   border-radius: 40% 40% 30% 30%;
