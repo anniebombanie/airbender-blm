@@ -51,7 +51,7 @@ body {
 
 .aang-container {
   @include w-h( 50vmin, 90vmin );
-  border: 1px solid $sd;
+  border: 1px solid rgba( $wh, 0.05 );
   display: flex;
   flex-direction: column;
   align-items: center;
