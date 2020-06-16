@@ -444,7 +444,7 @@ body {
 .torso {
   // sash
   @include w-h( 22%, 6% );
-  background-color: $rl;
+  background-color: $od;
   position: absolute;
   box-shadow: 0 0.5vmin 0 0 $yd;
   border-radius: 0 0 30% 30%;
@@ -502,7 +502,6 @@ body {
   &__l,
   &__r {
     @include w-h( 9%, 24% );
-    background: $rl;
     position: absolute;
     border-radius: 40% 40% 30% 30%;
     top: 70.6%;
@@ -518,6 +517,9 @@ body {
   &__l {
     left: 35.8%;
     transform: rotate( 10deg );
+    background:
+      radial-gradient( 1vmin 1.6vmin at 55% 95%, $t 5.4vmin, $rd 5.5vmin ),
+      $rl;
 
     &::before {
       left: -48%;
@@ -532,6 +534,9 @@ body {
   &__r {
     left: 55.5%;
     transform: rotate( -10deg );
+    background:
+      radial-gradient( 1vmin 1.6vmin at 35% 95%, $t 5.4vmin, $rd 5.5vmin ),
+      $rl;
 
     &::before {
       left: -52%;
@@ -540,7 +545,7 @@ body {
         radial-gradient( circle at 71% -2.2%, $yd 2.5vmin, $t 2.6vmin ),
         linear-gradient( $ym 60%, $t 60.5% ),
         linear-gradient( $ym 60%, $t 60.5% ),
-        radial-gradient( 1vmin 2vmin at 58% 40%, $t 5.4vmin, $yd 5.5vmin ),
+        radial-gradient( 1vmin 2vmin at 58% 42%, $t 5.4vmin, $yd 5.5vmin ),
         $ym;
     }
   }
@@ -569,6 +574,7 @@ body {
     // shoe toe
     &::after {
       @include pseduo-div( 190%, 120%, $bl );
+      background: radial-gradient( 2vmin 0.5vmin at 50% 85%, $bd 2.5vmin, $t 2.8vmin ), $bl;
       box-shadow: inset 0 -0.5vmin 0 0 $bd;
       position: absolute;
     }

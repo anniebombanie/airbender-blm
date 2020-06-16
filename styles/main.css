@@ -444,7 +444,7 @@ body {
 .torso {
   width: 22%;
   height: 6%;
-  background-color: #964a33;
+  background-color: #a45216;
   position: absolute;
   -webkit-box-shadow: 0 0.5vmin 0 0 #a18348;
           box-shadow: 0 0.5vmin 0 0 #a18348;
@@ -517,7 +517,6 @@ body {
 .leg__l, .leg__r {
   width: 9%;
   height: 24%;
-  background: #964a33;
   position: absolute;
   border-radius: 40% 40% 30% 30%;
   top: 70.6%;
@@ -538,6 +537,7 @@ body {
   left: 35.8%;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
+  background: radial-gradient(1vmin 1.6vmin at 55% 95%, transparent 5.4vmin, #773225 5.5vmin), #964a33;
 }
 
 .leg__l::before {
@@ -550,13 +550,14 @@ body {
   left: 55.5%;
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
+  background: radial-gradient(1vmin 1.6vmin at 35% 95%, transparent 5.4vmin, #773225 5.5vmin), #964a33;
 }
 
 .leg__r::before {
   left: -52%;
   border-radius: 10% 10% 30% 30% / 30% 30% 30% 80%;
-  background: radial-gradient(circle at 71% -2.2%, #a18348 2.5vmin, transparent 2.6vmin), -webkit-gradient(linear, left top, left bottom, color-stop(60%, #deb563), color-stop(60.5%, transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(60%, #deb563), color-stop(60.5%, transparent)), radial-gradient(1vmin 2vmin at 58% 40%, transparent 5.4vmin, #a18348 5.5vmin), #deb563;
-  background: radial-gradient(circle at 71% -2.2%, #a18348 2.5vmin, transparent 2.6vmin), linear-gradient(#deb563 60%, transparent 60.5%), linear-gradient(#deb563 60%, transparent 60.5%), radial-gradient(1vmin 2vmin at 58% 40%, transparent 5.4vmin, #a18348 5.5vmin), #deb563;
+  background: radial-gradient(circle at 71% -2.2%, #a18348 2.5vmin, transparent 2.6vmin), -webkit-gradient(linear, left top, left bottom, color-stop(60%, #deb563), color-stop(60.5%, transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(60%, #deb563), color-stop(60.5%, transparent)), radial-gradient(1vmin 2vmin at 58% 42%, transparent 5.4vmin, #a18348 5.5vmin), #deb563;
+  background: radial-gradient(circle at 71% -2.2%, #a18348 2.5vmin, transparent 2.6vmin), linear-gradient(#deb563 60%, transparent 60.5%), linear-gradient(#deb563 60%, transparent 60.5%), radial-gradient(1vmin 2vmin at 58% 42%, transparent 5.4vmin, #a18348 5.5vmin), #deb563;
 }
 
 .shoe__l, .shoe__r {
@@ -586,6 +587,7 @@ body {
   display: block;
   position: absolute;
   background: #715339;
+  background: radial-gradient(2vmin 0.5vmin at 50% 85%, #23201d 2.5vmin, transparent 2.8vmin), #715339;
   -webkit-box-shadow: inset 0 -0.5vmin 0 0 #23201d;
           box-shadow: inset 0 -0.5vmin 0 0 #23201d;
   position: absolute;
