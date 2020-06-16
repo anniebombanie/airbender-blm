@@ -51,7 +51,7 @@ body {
 
 .aang-container {
   @include w-h( 50vmin, 90vmin );
-  border: 1px solid rgba( $wh, 0.05 );
+  // border: 1px solid rgba( $wh, 0.05 );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,7 +63,7 @@ body {
 .sign {
   @include w-h( 54%, 22% );
   position: absolute;
-  top: -2%;
+  top: -2.5%;
   transform: rotate( -2.5deg );
   background: linear-gradient( 165deg, darken( $wh, 9 ) 65%, darken( $wh, 2 ) 66% );
 
@@ -184,7 +184,7 @@ body {
 
   &__l,
   &__r {
-    @include w-h( 5%, 4.5% );
+    @include w-h( 4.7%, 4.2% );
     background-color: $sl;
     position: absolute;
     top: 33%;
@@ -213,7 +213,7 @@ body {
 
     &::before {
       background:
-        radial-gradient( 4% 4% at 98% 45%, $sl 0.3vmin, $t 0.4vmin ),
+        radial-gradient( 4% 4% at 92% 38%, $sl 0.3vmin, $t 0.4vmin ),
         $sd;
     }
   }
@@ -329,7 +329,7 @@ body {
 
     // hand
     &::after {
-      @include pseduo-div( 70%, 35%, $sl );
+      @include pseduo-div( 70%, 35%, $sd );
       top: -23%;
       transform: rotate( -95deg );
     }
@@ -351,7 +351,7 @@ body {
       left: 32%;
       transform: rotate( -46deg );
       box-shadow: inset 0.0vmin 0.5vmin 0 0 $ym;
-      border-radius: 50% 50% 20% 0 / 70% 50% 40% 0;
+      border-radius: 50% 5% 20% 0 / 70% 50% 40% 0;
       background:
         linear-gradient( $ym 28%, $t 29% ),
         radial-gradient( 4% 1% at 50% 60%, $t 4vmin, $ym 4.2vmin ),
@@ -363,8 +363,8 @@ body {
     &::after {
       // @include pseduo-div( 100%, 40%, green );
       border-radius: 20% 20% 10% 80% / 30% 10% 10% 90%;
-      left: -7%;
-      transform: rotate( -15deg );
+      left: 0%;
+      transform: rotate( -10deg );
     }
   }
 
@@ -385,7 +385,7 @@ body {
       // border: 1px dashed green;
       transform: rotate( 45deg );
       box-shadow: inset 0.0vmin 0.5vmin 0 0 $ym;
-      border-radius: 50% 50% 0 20% / 50% 70% 0 40%;
+      border-radius: 5% 50% 0 20% / 50% 70% 0 40%;
       background:
         linear-gradient( $ym 28%, $t 29% ),
         radial-gradient( 4% 1% at 50% 60%, $t 4vmin, $ym 4.2vmin ),
@@ -410,8 +410,8 @@ body {
   }
 
   &__l {
-    top: 21.5%;
-    left: 17.4%;
+    top: 20.5%;
+    left: 20%;
     transform: rotate( 5deg );
     border-radius: 10% 10% 30% 30%;
     background:
@@ -421,7 +421,7 @@ body {
 
   &__r {
     top: 21%;
-    left: 76%;
+    left: 73.4%;
     transform: rotate( -5deg );
     border-radius: 10% 10% 30% 30%;
     background:
@@ -434,16 +434,16 @@ body {
   &__l,
   &__r {
     // border: 1px dashed green;
-    @include w-h( 8.5%, 1.6% );
-    border-radius: 35%;
-    background-color: $sl;
+    @include w-h( 8%, 1.5% );
+    border-radius: 30% / 80%;
+    background-color: $sd;
     box-shadow:
-      0 -1vmin 0 0 $sl,
-      0 -2vmin 0 0 $sl,
-      0 -3vmin 0 0 $sl;
+      0vmin -1vmin 0 0 $sd, /* top */
+      0.3vmin -2vmin 0 0 $sd,
+      0.7vmin -3vmin 0 -0.15vmin $sd;
     position: absolute;
-    top: 18.5%;
-    left: 16.8%;
+    top: 17.5%;
+    left: 19.8%;
     transform: rotate( -8deg );
     // background:
     //   radial-gradient( 3% 1% at 45% 50%, $od 1.6vmin, $t 1.7vmin );
@@ -462,12 +462,12 @@ body {
 
   // body
   &::before {
-    @include pseduo-div( 130%, 220%, null );
+    @include pseduo-div( 120%, 220%, null );
     background: linear-gradient( $od 25%, $ym 25.5% );
     position: absolute;
-    border-radius: 0 0 15% 15% / 50%;
+    border-radius: 0 0 15% 15% / 80%;
     top: -160%;
-    left: -15%;
+    left: -10%;
     overflow: hidden;
   }
 
@@ -475,23 +475,23 @@ body {
     @include pseduo-div( 108%, 60%, $ym );
     position: absolute;
     border-radius: 50%;
-    top: 15%;
+    top: 16%;
     left: -4%;
   }
 
   &__shadow {
-    @include w-h( 28.8%, 11% );
+    @include w-h( 26.5%, 11% );
     position: absolute;
     border-radius: 0 0 48% 48%;
     top: 49%;
-    left: 35.6%;
+    left: 36.7%;
     overflow: hidden;
     // border: 1px dotted green;
 
     &::before,
     &::after {
       @include pseduo-div( 120%, 60%, $yd );
-      top: 8%;
+      top: 0%;
       border-radius: 50%;
     }
 

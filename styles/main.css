@@ -28,7 +28,6 @@ body {
 .aang-container {
   width: 50vmin;
   height: 90vmin;
-  border: 1px solid rgba(255, 255, 255, 0.05);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +46,7 @@ body {
   width: 54%;
   height: 22%;
   position: absolute;
-  top: -2%;
+  top: -2.5%;
   -webkit-transform: rotate(-2.5deg);
           transform: rotate(-2.5deg);
   background: linear-gradient(165deg, #e8e8e8 65%, #fafafa 66%);
@@ -183,8 +182,8 @@ body {
 }
 
 .ear__l, .ear__r {
-  width: 5%;
-  height: 4.5%;
+  width: 4.7%;
+  height: 4.2%;
   background-color: #fedbbb;
   position: absolute;
   top: 33%;
@@ -218,7 +217,7 @@ body {
 }
 
 .ear__r::before {
-  background: radial-gradient(4% 4% at 98% 45%, #fedbbb 0.3vmin, transparent 0.4vmin), #d1a47b;
+  background: radial-gradient(4% 4% at 92% 38%, #fedbbb 0.3vmin, transparent 0.4vmin), #d1a47b;
 }
 
 .neck {
@@ -346,7 +345,7 @@ body {
   height: 35%;
   display: block;
   position: absolute;
-  background: #fedbbb;
+  background: #d1a47b;
   top: -23%;
   -webkit-transform: rotate(-95deg);
           transform: rotate(-95deg);
@@ -368,16 +367,16 @@ body {
           transform: rotate(-46deg);
   -webkit-box-shadow: inset 0vmin 0.5vmin 0 0 #deb563;
           box-shadow: inset 0vmin 0.5vmin 0 0 #deb563;
-  border-radius: 50% 50% 20% 0 / 70% 50% 40% 0;
+  border-radius: 50% 5% 20% 0 / 70% 50% 40% 0;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(28%, #deb563), color-stop(29%, transparent)), radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), -webkit-gradient(linear, left top, right top, color-stop(60%, transparent), color-stop(61%, #a45216), color-stop(83%, #a45216), color-stop(84%, #eb6d21)), radial-gradient(4% 1% at 50% 77%, #deb563 4vmin, transparent 4.2vmin), radial-gradient(4% 1% at 50% 60%, #a45216 4vmin, transparent 4.2vmin);
   background: linear-gradient(#deb563 28%, transparent 29%), radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), linear-gradient(90deg, transparent 60%, #a45216 61%, #a45216 83%, #eb6d21 84%), radial-gradient(4% 1% at 50% 77%, #deb563 4vmin, transparent 4.2vmin), radial-gradient(4% 1% at 50% 60%, #a45216 4vmin, transparent 4.2vmin);
 }
 
 .arm__l::after {
   border-radius: 20% 20% 10% 80% / 30% 10% 10% 90%;
-  left: -7%;
-  -webkit-transform: rotate(-15deg);
-          transform: rotate(-15deg);
+  left: 0%;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
 
 .arm__r {
@@ -396,7 +395,7 @@ body {
           transform: rotate(45deg);
   -webkit-box-shadow: inset 0vmin 0.5vmin 0 0 #deb563;
           box-shadow: inset 0vmin 0.5vmin 0 0 #deb563;
-  border-radius: 50% 50% 0 20% / 50% 70% 0 40%;
+  border-radius: 5% 50% 0 20% / 50% 70% 0 40%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(28%, #deb563), color-stop(29%, transparent)), radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), -webkit-gradient(linear, left top, right top, color-stop(17%, #eb6d21), color-stop(18%, #a45216), color-stop(34%, #a45216), color-stop(35%, transparent)), radial-gradient(4% 1% at 50% 77%, #deb563 4vmin, transparent 4.2vmin), radial-gradient(4% 1% at 50% 60%, #a45216 4vmin, transparent 4.2vmin);
   background: linear-gradient(#deb563 28%, transparent 29%), radial-gradient(4% 1% at 50% 60%, transparent 4vmin, #deb563 4.2vmin), linear-gradient(90deg, #eb6d21 17%, #a45216 18%, #a45216 34%, transparent 35%), radial-gradient(4% 1% at 50% 77%, #deb563 4vmin, transparent 4.2vmin), radial-gradient(4% 1% at 50% 60%, #a45216 4vmin, transparent 4.2vmin);
 }
@@ -415,8 +414,8 @@ body {
 }
 
 .sleeve__l {
-  top: 21.5%;
-  left: 17.4%;
+  top: 20.5%;
+  left: 20%;
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
   border-radius: 10% 10% 30% 30%;
@@ -425,7 +424,7 @@ body {
 
 .sleeve__r {
   top: 21%;
-  left: 76%;
+  left: 73.4%;
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
   border-radius: 10% 10% 30% 30%;
@@ -433,15 +432,15 @@ body {
 }
 
 .fingers__l, .fingers__r {
-  width: 8.5%;
-  height: 1.6%;
-  border-radius: 35%;
-  background-color: #fedbbb;
-  -webkit-box-shadow: 0 -1vmin 0 0 #fedbbb, 0 -2vmin 0 0 #fedbbb, 0 -3vmin 0 0 #fedbbb;
-          box-shadow: 0 -1vmin 0 0 #fedbbb, 0 -2vmin 0 0 #fedbbb, 0 -3vmin 0 0 #fedbbb;
+  width: 8%;
+  height: 1.5%;
+  border-radius: 30% / 80%;
+  background-color: #d1a47b;
+  -webkit-box-shadow: 0vmin -1vmin 0 0 #d1a47b, 0.3vmin -2vmin 0 0 #d1a47b, 0.7vmin -3vmin 0 -0.15vmin #d1a47b;
+          box-shadow: 0vmin -1vmin 0 0 #d1a47b, 0.3vmin -2vmin 0 0 #d1a47b, 0.7vmin -3vmin 0 -0.15vmin #d1a47b;
   position: absolute;
-  top: 18.5%;
-  left: 16.8%;
+  top: 17.5%;
+  left: 19.8%;
   -webkit-transform: rotate(-8deg);
           transform: rotate(-8deg);
 }
@@ -460,16 +459,16 @@ body {
 
 .torso::before {
   content: '';
-  width: 130%;
+  width: 120%;
   height: 220%;
   display: block;
   position: absolute;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #a45216), color-stop(25.5%, #deb563));
   background: linear-gradient(#a45216 25%, #deb563 25.5%);
   position: absolute;
-  border-radius: 0 0 15% 15% / 50%;
+  border-radius: 0 0 15% 15% / 80%;
   top: -160%;
-  left: -15%;
+  left: -10%;
   overflow: hidden;
 }
 
@@ -482,17 +481,17 @@ body {
   background: #deb563;
   position: absolute;
   border-radius: 50%;
-  top: 15%;
+  top: 16%;
   left: -4%;
 }
 
 .torso__shadow {
-  width: 28.8%;
+  width: 26.5%;
   height: 11%;
   position: absolute;
   border-radius: 0 0 48% 48%;
   top: 49%;
-  left: 35.6%;
+  left: 36.7%;
   overflow: hidden;
 }
 
@@ -503,7 +502,7 @@ body {
   display: block;
   position: absolute;
   background: #a18348;
-  top: 8%;
+  top: 0%;
   border-radius: 50%;
 }
 
