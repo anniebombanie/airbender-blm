@@ -630,9 +630,13 @@ body {
 .fire {
   &__front {
     @include w-h( 58vmin, 58vmin );
-    border: 1px dashed white;
+    // border: 1px dashed white;
     position: absolute;
     border-radius: 50%;
     bottom: 5%;
+    background: radial-gradient( circle at 15% 10%, $t 62%, rgba( $bu, 0.25 ) 63% );
+    filter: blur( 1.5vmin );
+    transform: skew( 10deg );
+    box-shadow: 1vmin 0.5vmin 0 0 $bu;
   }
 }

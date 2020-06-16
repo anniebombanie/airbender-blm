@@ -643,8 +643,14 @@ body {
 .fire__front {
   width: 58vmin;
   height: 58vmin;
-  border: 1px dashed white;
   position: absolute;
   border-radius: 50%;
   bottom: 5%;
+  background: radial-gradient(circle at 15% 10%, transparent 62%, rgba(142, 255, 253, 0.25) 63%);
+  -webkit-filter: blur(1.5vmin);
+          filter: blur(1.5vmin);
+  -webkit-transform: skew(10deg);
+          transform: skew(10deg);
+  -webkit-box-shadow: 1vmin 0.5vmin 0 0 #8efffd;
+          box-shadow: 1vmin 0.5vmin 0 0 #8efffd;
 }
