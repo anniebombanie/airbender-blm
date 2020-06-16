@@ -201,14 +201,14 @@ body {
 }
 
 .ear__l {
-  left: 35.5%;
+  left: 36%;
   -webkit-transform: rotate(-195deg);
           transform: rotate(-195deg);
 }
 
 .ear__l::before {
   left: 12%;
-  background: radial-gradient(4% 4% at 8% 40%, #fedbbb 0.3vmin, transparent 0.4vmin), #d1a47b;
+  background: radial-gradient(4% 4% at 20% 40%, #fedbbb 0.3vmin, transparent 0.4vmin), #d1a47b;
 }
 
 .ear__r {
@@ -218,7 +218,7 @@ body {
 }
 
 .ear__r::before {
-  background: radial-gradient(4% 4% at 95% 45%, #fedbbb 0.3vmin, transparent 0.4vmin), #d1a47b;
+  background: radial-gradient(4% 4% at 98% 45%, #fedbbb 0.3vmin, transparent 0.4vmin), #d1a47b;
 }
 
 .neck {

@@ -196,13 +196,13 @@ body {
   }
 
   &__l {
-    left: 35.5%;
+    left: 36%;
     transform: rotate( -195deg );
 
     &::before {
       left: 12%;
       background:
-        radial-gradient( 4% 4% at 8% 40%, $sl 0.3vmin, $t 0.4vmin ),
+        radial-gradient( 4% 4% at 20% 40%, $sl 0.3vmin, $t 0.4vmin ),
         $sd;
     }
   }
@@ -213,7 +213,7 @@ body {
 
     &::before {
       background:
-        radial-gradient( 4% 4% at 95% 45%, $sl 0.3vmin, $t 0.4vmin ),
+        radial-gradient( 4% 4% at 98% 45%, $sl 0.3vmin, $t 0.4vmin ),
         $sd;
     }
   }
