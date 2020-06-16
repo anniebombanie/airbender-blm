@@ -287,7 +287,7 @@ body {
   }
 
   &::before {
-    left: -42%;
+    left: -41%;
     background:
       linear-gradient( -5deg, $t 96%, $ol 96.5% ),
       radial-gradient( 2% 4% at 77% 6%, $od 4.6vmin, $t 4.7vmin ),
@@ -445,41 +445,41 @@ body {
   @include w-h( 22%, 6% );
   background-color: $rl;
   position: absolute;
-  border-radius: 0 0 40% 40%;
+  border-radius: 0 0 30% 30%;
   top: 57.5%;
   left: 39%;
 
   // body
   &::before {
     @include pseduo-div( 130%, 220%, null );
-    background: linear-gradient( $od 30%, $yd 30.5% );
+    background: linear-gradient( $od 30%, $ym 30.5% );
     position: absolute;
     border-radius: 0 0 15% 15% / 50%;
     top: -170%;
     left: -15%;
+    overflow: hidden;
   }
 
   &::after {
-    @include pseduo-div( 108%, 60%, $yd );
+    @include pseduo-div( 108%, 60%, $ym );
     position: absolute;
     border-radius: 50%;
     top: 5%;
     left: -4%;
   }
 
-  &__depth {
-    @include w-h( 26%, 10% );
-    background-color: $ym;
+  &__shadow {
+    @include w-h( 28%, 9% );
     position: absolute;
     border-radius: 0 0 35% 35%;
-    top: 51.5%;
-    left: 37%;
+    top: 51%;
+    left: 36%;
     overflow: hidden;
 
     &::before,
     &::after {
       @include pseduo-div( 120%, 60%, $yd );
-      top: -5%;
+      top: 10%;
       border-radius: 50%;
     }
 
@@ -498,10 +498,11 @@ body {
 .leg {
   &__l,
   &__r {
-    @include w-h( 8%, 22% );
+    @include w-h( 9%, 22% );
     background: $rl;
     position: absolute;
     border-radius: 40%;
+    top: 72.6%;
 
     // pants
     &::before {
@@ -509,28 +510,43 @@ body {
       position: absolute;
       top: -50%;
       // border: 1px dashed green;
-      border-radius: 20% 20% 30% 30% / 20%;
     }
   }
 
   &__l {
-    top: 72.5%;
-    left: 36%;
+    left: 35.8%;
     transform: rotate( 10deg );
 
     &::before {
       left: -50%;
+      // box-shadow: inset -1vmin 0 0 0 $yd;
+      border-radius: 10% 10% 30% 30% / 30% 30% 80% 30%;
+      background:
+        radial-gradient( 1vmin 2vmin at 35% 40%, $t 5.4vmin, $yd 5.5vmin ),
+        $ym;
     }
   }
 
   &__r {
-    top: 72.8%;
-    left: 56.5%;
+    left: 55.5%;
     transform: rotate( -10deg );
 
     &::before {
       left: -50%;
+      // box-shadow: inset 1vmin 0 0 0 $yd;
+      border-radius: 10% 10% 30% 30% / 30% 30% 30% 80%;
+      background:
+        linear-gradient( $ym 60%, $t 61% ),
+        linear-gradient( $ym 60%, $t 61% ),
+        radial-gradient( 1vmin 2vmin at 58% 40%, $t 5.4vmin, $yd 5.5vmin ),
+        $ym;
     }
+
+    // &::after {
+    //   @include pseduo-div( 200%, 100%, green );
+    //   top: -50%;
+    //   left: -80%;
+    // }
   }
 }
 
