@@ -360,7 +360,7 @@ body {
   -webkit-transform: rotate(7deg);
           transform: rotate(7deg);
   border-radius: 40% 40% 0 30% / 40% 70% 0 30%;
-  background: linear-gradient(93deg, transparent 80%, #ffd75e 81%), radial-gradient(4% 1% at 50% 47%, #deb563 4vmin, transparent 4.2vmin), radial-gradient(4% 1% at 50% 39%, #a45216 4vmin, transparent 4.2vmin), #deb563;
+  background: linear-gradient(93deg, transparent 80%, #ffd75e 81%), radial-gradient(4% 1% at 50% 44%, #deb563 4vmin, transparent 4.2vmin), radial-gradient(4% 1% at 50% 36%, #a45216 4vmin, transparent 4.2vmin), #deb563;
 }
 
 .arm__l::before {
@@ -393,7 +393,7 @@ body {
 
 .arm__r::before {
   top: 73%;
-  left: -48%;
+  left: -45%;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   -webkit-box-shadow: inset 0vmin 0.5vmin 0 0 #deb563;
