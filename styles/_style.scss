@@ -41,8 +41,8 @@ $t: transparent;
 body {
   margin: 0;
   background:
-    radial-gradient( circle, $t 50%, $blk 200%),
-    linear-gradient( darken( $n, 9 ), $n 20%, $n 60%, darken( $n, 9 ) 99% );
+    radial-gradient( circle, $t 50%, $blk 150%),
+    linear-gradient( darken( $n, 9 ), $n 20%, $n 60%, lighten( $n, 9 ) 99% );
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@ body {
 
 .aang-container {
   @include w-h( 50vmin, 90vmin );
-  box-shadow: 0 2vmin 2vmin -2.5vmin rgba( $bu, 0.5 );
+  box-shadow: 0 2vmin 2vmin -2vmin darken( $n, 5 );
   display: flex;
   flex-direction: column;
   align-items: center;

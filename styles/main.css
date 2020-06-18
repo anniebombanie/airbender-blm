@@ -11,8 +11,8 @@ html {
 /* --- Colours --- */
 body {
   margin: 0;
-  background: radial-gradient(circle, transparent 50%, #000 200%), -webkit-gradient(linear, left top, left bottom, from(#2b3c46), color-stop(20%, #3d5462), color-stop(60%, #3d5462), color-stop(99%, #2b3c46));
-  background: radial-gradient(circle, transparent 50%, #000 200%), linear-gradient(#2b3c46, #3d5462 20%, #3d5462 60%, #2b3c46 99%);
+  background: radial-gradient(circle, transparent 50%, #000 150%), -webkit-gradient(linear, left top, left bottom, from(#2b3c46), color-stop(20%, #3d5462), color-stop(60%, #3d5462), color-stop(99%, #4f6c7e));
+  background: radial-gradient(circle, transparent 50%, #000 150%), linear-gradient(#2b3c46, #3d5462 20%, #3d5462 60%, #4f6c7e 99%);
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,8 +29,8 @@ body {
 .aang-container {
   width: 50vmin;
   height: 90vmin;
-  -webkit-box-shadow: 0 2vmin 2vmin -2.5vmin rgba(142, 255, 253, 0.5);
-          box-shadow: 0 2vmin 2vmin -2.5vmin rgba(142, 255, 253, 0.5);
+  -webkit-box-shadow: 0 2vmin 2vmin -2vmin #334752;
+          box-shadow: 0 2vmin 2vmin -2vmin #334752;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
