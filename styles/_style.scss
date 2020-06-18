@@ -41,7 +41,7 @@ $t: transparent;
 body {
   margin: 0;
   background:
-    // linear-gradient( -10deg, darken( $n, 9 ), $t ),
+    radial-gradient( circle, $t 50%, $blk 200%),
     linear-gradient( darken( $n, 9 ), $n 20%, $n 60%, darken( $n, 9 ) 99% );
   min-height: 100vh;
   display: flex;
@@ -667,15 +667,15 @@ body {
     bottom: 5%;
     transform: skew( 20deg) rotate( 5deg );
     // left: 15%;
-    // animation: glow 3s infinite ease-in-out;
-    // animation-delay: 0.5s;
+    animation: glow 3s infinite ease-in-out;
+    animation-delay: 0.5s;
   }
 
   &--b {
     top: -10%;
     left: -15%;
     transform: rotate( 135deg );
-    // animation: glow 3s infinite ease-in-out;
+    animation: glow 3s infinite ease-in-out;
 
     &::before {
       @include pseduo-div( 150%, 150%, null );
@@ -688,19 +688,22 @@ body {
   }
 }
 
-@keyframes glow {
-  0% {
-    opacity: 1;
-  }
+// @keyframes glow {
+//   0% {
+//     opacity: 1;
+//     filter: blur( 1vmin );
+//   }
 
-  50% {
-    opacity: 0.5;
-  }
+//   50% {
+//     opacity: 0.8;
+//     filter: blur( 2vmin );
+//   }
 
-  100% {
-    opacity: 1;
-  }
-}
+//   100% {
+//     opacity: 1;
+//     filter: blur( 1vmin );
+//   }
+// }
 
 @keyframes blur {
   0% {

@@ -11,8 +11,8 @@ html {
 /* --- Colours --- */
 body {
   margin: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2b3c46), color-stop(20%, #3d5462), color-stop(60%, #3d5462), color-stop(99%, #2b3c46));
-  background: linear-gradient(#2b3c46, #3d5462 20%, #3d5462 60%, #2b3c46 99%);
+  background: radial-gradient(circle, transparent 50%, #000 200%), -webkit-gradient(linear, left top, left bottom, from(#2b3c46), color-stop(20%, #3d5462), color-stop(60%, #3d5462), color-stop(99%, #2b3c46));
+  background: radial-gradient(circle, transparent 50%, #000 200%), linear-gradient(#2b3c46, #3d5462 20%, #3d5462 60%, #2b3c46 99%);
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -673,6 +673,10 @@ body {
   bottom: 5%;
   -webkit-transform: skew(20deg) rotate(5deg);
           transform: skew(20deg) rotate(5deg);
+  -webkit-animation: glow 3s infinite ease-in-out;
+          animation: glow 3s infinite ease-in-out;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .fire--b {
@@ -680,6 +684,8 @@ body {
   left: -15%;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
+  -webkit-animation: glow 3s infinite ease-in-out;
+          animation: glow 3s infinite ease-in-out;
 }
 
 .fire--b::before {
@@ -693,30 +699,6 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-box-shadow: 0 0 3vmin 0 rgba(255, 255, 255, 0.1), 0 0 2vmin 0 rgba(142, 255, 253, 0.1), 0 0 5.2vmin 0 rgba(142, 255, 253, 0.1), 0 0 7vmin 0 rgba(142, 255, 253, 0.1);
           box-shadow: 0 0 3vmin 0 rgba(255, 255, 255, 0.1), 0 0 2vmin 0 rgba(142, 255, 253, 0.1), 0 0 5.2vmin 0 rgba(142, 255, 253, 0.1), 0 0 7vmin 0 rgba(142, 255, 253, 0.1);
-}
-
-@-webkit-keyframes glow {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes glow {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @-webkit-keyframes blur {
