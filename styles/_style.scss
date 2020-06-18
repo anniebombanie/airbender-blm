@@ -264,7 +264,7 @@ body {
     // center bottom curve
     &::before {
       @include pseduo-div( 90%, 14%, null );
-      top: 84.5%;
+      top: 86%;
       left: 100%;
       background: linear-gradient( $t 35%, $ym 35% );
       border-radius: 50%;
@@ -518,6 +518,7 @@ body {
     position: absolute;
     border-radius: 40% 40% 30% 30%;
     top: 70.6%;
+    // border: 1px solid white;
 
     // pants
     &::before {
@@ -532,6 +533,7 @@ body {
     transform: rotate( 10deg );
     background:
       radial-gradient( 1vmin 1.6vmin at 55% 95%, $t 5.4vmin, $rd 5.5vmin ),
+      radial-gradient( 1.6vmin 1vmin at 68% 99%, $rd 3vmin, $rl 3.1vmin ),
       $rl;
 
     &::before {
@@ -548,7 +550,8 @@ body {
     left: 55.5%;
     transform: rotate( -10deg );
     background:
-      radial-gradient( 1vmin 1.6vmin at 35% 95%, $t 5.4vmin, $rd 5.5vmin ),
+    radial-gradient( 1vmin 1.6vmin at 35% 95%, $t 5.4vmin, $rd 5.5vmin ),
+    radial-gradient( 1.6vmin 1vmin at 30% 99%, $rd 3vmin, $rl 3.1vmin ),
       $rl;
 
     &::before {
@@ -558,7 +561,7 @@ body {
         radial-gradient( circle at 71% -2.2%, $yd 2.5vmin, $t 2.6vmin ),
         linear-gradient( $ym 60%, $t 60.5% ),
         linear-gradient( $ym 60%, $t 60.5% ),
-        radial-gradient( 1vmin 2vmin at 58% 42%, $t 5.4vmin, $yd 5.5vmin ),
+        radial-gradient( 1vmin 2vmin at 56% 41%, $t 5.4vmin, $yd 5.5vmin ),
         $ym;
     }
   }
@@ -569,10 +572,8 @@ body {
   &__r {
     @include w-h( 6.8%, 3% );
     position: absolute;
-    background: $rl;
     top: 93%;
     border-radius: 50%;
-    // border: 1px dashed green;
 
     &::before {
       @include pseduo-div( 150%, 200%, null );
@@ -595,7 +596,11 @@ body {
 
   &__l {
     left: 33.3%;
-    transform: rotate( -10deg );
+    transform: rotate( -7deg );
+    background:
+      radial-gradient( 1.6vmin 1vmin at 55% 75%, $t 2.4vmin, $rd 2.5vmin ),
+      radial-gradient( 1.6vmin 1vmin at 45% 75%, $t 2.4vmin, $rd 2.5vmin ),
+      $rl;
 
     &::before {
       left: -60%;
@@ -606,13 +611,17 @@ body {
       top: 200%;
       left: -125%;
       border-radius: 70% 50% 30% 40%;
-      transform: rotate( 10deg );
+      transform: rotate( 7deg );
     }
   }
 
   &__r {
     left: 60%;
     transform: rotate( 7deg );
+    background:
+      radial-gradient( 1.6vmin 1vmin at 50% 75%, $t 2.4vmin, $rd 2.5vmin ),
+      radial-gradient( 1.6vmin 1vmin at 50% 75%, $t 2.4vmin, $rd 2.5vmin ),
+      $rl;
 
     &::before {
       left: 0%;
@@ -631,7 +640,6 @@ body {
 .fire {
   &__front {
     @include w-h( 58vmin, 58vmin );
-    // border: 1px dashed white;
     position: absolute;
     border-radius: 50%;
     bottom: 5%;
