@@ -124,6 +124,8 @@ body {
   left: 0;
   border-radius: 25% 25% 5% 5%;
   background-color: #fff;
+  -webkit-animation: glow 3s infinite ease-in-out;
+          animation: glow 3s infinite ease-in-out;
 }
 
 .head__arrow--top::after {
@@ -179,6 +181,8 @@ body {
   position: absolute;
   bottom: 2%;
   left: 3.2%;
+  -webkit-animation: glow 3s infinite ease-in-out;
+          animation: glow 3s infinite ease-in-out;
 }
 
 .ear__l, .ear__r, .ear__l::before, .ear__r::before {
@@ -658,7 +662,7 @@ body {
   height: 58vmin;
   position: absolute;
   border-radius: 50%;
-  background: radial-gradient(circle at 15% 10%, transparent 62%, rgba(142, 255, 253, 0.25) 63%);
+  background: radial-gradient(circle at 10% 10%, transparent 62%, rgba(142, 255, 253, 0.25) 63%);
   -webkit-filter: blur(1.5vmin);
           filter: blur(1.5vmin);
   -webkit-box-shadow: 1vmin 0.5vmin 0 0 #8efffd;
@@ -667,8 +671,8 @@ body {
 
 .fire--f {
   bottom: 5%;
-  -webkit-transform: skew(10deg);
-          transform: skew(10deg);
+  -webkit-transform: skew(20deg) rotate(5deg);
+          transform: skew(20deg) rotate(5deg);
 }
 
 .fire--b {
@@ -676,4 +680,71 @@ body {
   left: -15%;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
+}
+
+.fire--b::before {
+  content: '';
+  width: 150%;
+  height: 150%;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  top: -60%;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 0 3vmin 0 rgba(255, 255, 255, 0.1), 0 0 2vmin 0 rgba(142, 255, 253, 0.1), 0 0 5.2vmin 0 rgba(142, 255, 253, 0.1), 0 0 7vmin 0 rgba(142, 255, 253, 0.1);
+          box-shadow: 0 0 3vmin 0 rgba(255, 255, 255, 0.1), 0 0 2vmin 0 rgba(142, 255, 253, 0.1), 0 0 5.2vmin 0 rgba(142, 255, 253, 0.1), 0 0 7vmin 0 rgba(142, 255, 253, 0.1);
+}
+
+@-webkit-keyframes glow {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes glow {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blur {
+  0% {
+    -webkit-filter: blur(1vmin);
+            filter: blur(1vmin);
+  }
+  50% {
+    -webkit-filter: blur(2.5vmin);
+            filter: blur(2.5vmin);
+  }
+  100% {
+    -webkit-filter: blur(1vmin);
+            filter: blur(1vmin);
+  }
+}
+
+@keyframes blur {
+  0% {
+    -webkit-filter: blur(1vmin);
+            filter: blur(1vmin);
+  }
+  50% {
+    -webkit-filter: blur(2.5vmin);
+            filter: blur(2.5vmin);
+  }
+  100% {
+    -webkit-filter: blur(1vmin);
+            filter: blur(1vmin);
+  }
 }

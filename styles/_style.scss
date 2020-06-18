@@ -125,6 +125,7 @@ body {
         left: 0;
         border-radius: 25% 25% 5% 5%;
         background-color: $wh;
+        animation: glow 3s infinite ease-in-out;
       }
 
       // arrow
@@ -173,6 +174,7 @@ body {
     position: absolute;
     bottom: 2%;
     left: 3.2%;
+    animation: glow 3s infinite ease-in-out;
   }
 }
 
@@ -656,19 +658,60 @@ body {
     @include w-h( 58vmin, 58vmin );
     position: absolute;
     border-radius: 50%;
-    background: radial-gradient( circle at 15% 10%, $t 62%, rgba( $bu, 0.25 ) 63% );
+    background: radial-gradient( circle at 10% 10%, $t 62%, rgba( $bu, 0.25 ) 63% );
     filter: blur( 1.5vmin );
     box-shadow: 1vmin 0.5vmin 0 0 $bu;
   }
 
   &--f {
     bottom: 5%;
-    transform: skew( 10deg );
+    transform: skew( 20deg) rotate( 5deg );
+    // left: 15%;
+    // animation: glow 3s infinite ease-in-out;
+    // animation-delay: 0.5s;
   }
 
   &--b {
     top: -10%;
     left: -15%;
     transform: rotate( 135deg );
+    // animation: glow 3s infinite ease-in-out;
+
+    &::before {
+      @include pseduo-div( 150%, 150%, null );
+      border-radius: 50%;
+      top: -60%;
+      background-color: rgba( $wh, 0.1 );
+      box-shadow: 0 0 3vmin 0 rgba( $wh, 0.1 ), 0 0 2vmin 0 rgba( $bu, 0.1 ), 0 0 5.2vmin 0 rgba( $bu, 0.1 ), 0 0 7vmin 0 rgba( $bu, 0.1 );
+      // z-index: 10;
+    }
+  }
+}
+
+@keyframes glow {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blur {
+  0% {
+    filter: blur( 1vmin );
+  }
+
+  50% {
+    filter: blur( 2.5vmin );
+  }
+
+  100% {
+    filter: blur( 1vmin );
   }
 }
