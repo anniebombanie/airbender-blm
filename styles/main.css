@@ -29,6 +29,8 @@ body {
 .aang-container {
   width: 50vmin;
   height: 90vmin;
+  -webkit-box-shadow: 0 2vmin 2vmin -2.5vmin rgba(142, 255, 253, 0.5);
+          box-shadow: 0 2vmin 2vmin -2.5vmin rgba(142, 255, 253, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,7 +280,7 @@ body {
   height: 14%;
   display: block;
   position: absolute;
-  top: 86%;
+  top: 85%;
   left: 100%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(35%, transparent), color-stop(35%, #deb563));
   background: linear-gradient(transparent 35%, #deb563 35%);
@@ -544,7 +546,7 @@ body {
   left: 35.8%;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
-  background: radial-gradient(1vmin 1.6vmin at 55% 95%, transparent 5.4vmin, #773225 5.5vmin), radial-gradient(1.6vmin 1vmin at 68% 99%, #773225 3vmin, #964a33 3.1vmin), #964a33;
+  background: radial-gradient(1vmin 1.6vmin at 55% 95%, transparent 5.4vmin, #773225 5.5vmin), radial-gradient(1.6vmin 1vmin at 66% 99.2%, #773225 3vmin, #964a33 3.1vmin), #964a33;
 }
 
 .leg__l::before {
@@ -603,7 +605,7 @@ body {
   left: 33.3%;
   -webkit-transform: rotate(-7deg);
           transform: rotate(-7deg);
-  background: radial-gradient(1.6vmin 1vmin at 55% 75%, transparent 2.4vmin, #773225 2.5vmin), radial-gradient(1.6vmin 1vmin at 45% 75%, transparent 2.4vmin, #773225 2.5vmin), #964a33;
+  background: radial-gradient(1.6vmin 1vmin at 40% 75%, transparent 2.4vmin, #773225 2.5vmin), radial-gradient(1.6vmin 1vmin at 40% 75%, transparent 2.4vmin, #773225 2.5vmin), #964a33;
 }
 
 .shoe__l::before {
@@ -641,17 +643,27 @@ body {
           transform: rotate(-8deg);
 }
 
-.fire__front {
+.fire--f, .fire--b {
   width: 58vmin;
   height: 58vmin;
   position: absolute;
   border-radius: 50%;
-  bottom: 5%;
   background: radial-gradient(circle at 15% 10%, transparent 62%, rgba(142, 255, 253, 0.25) 63%);
   -webkit-filter: blur(1.5vmin);
           filter: blur(1.5vmin);
-  -webkit-transform: skew(10deg);
-          transform: skew(10deg);
   -webkit-box-shadow: 1vmin 0.5vmin 0 0 #8efffd;
           box-shadow: 1vmin 0.5vmin 0 0 #8efffd;
+}
+
+.fire--f {
+  bottom: 5%;
+  -webkit-transform: skew(10deg);
+          transform: skew(10deg);
+}
+
+.fire--b {
+  top: -10%;
+  left: -10%;
+  -webkit-transform: rotate(110deg);
+          transform: rotate(110deg);
 }

@@ -52,7 +52,7 @@ body {
 
 .aang-container {
   @include w-h( 50vmin, 90vmin );
-  // border: 1px solid rgba( $wh, 0.05 );
+  box-shadow: 0 2vmin 2vmin -2.5vmin rgba( $bu, 0.5 );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -264,7 +264,7 @@ body {
     // center bottom curve
     &::before {
       @include pseduo-div( 90%, 14%, null );
-      top: 86%;
+      top: 85%;
       left: 100%;
       background: linear-gradient( $t 35%, $ym 35% );
       border-radius: 50%;
@@ -289,7 +289,6 @@ body {
   position: absolute;
   top: 29.5%;
   // border: 1px solid $wh;
-  // background: linear-gradient( 180deg, $t 45%, $rl 45%, $rl 52%, $t 52.5%);
   overflow: hidden;
 
   &::before,
@@ -533,7 +532,7 @@ body {
     transform: rotate( 10deg );
     background:
       radial-gradient( 1vmin 1.6vmin at 55% 95%, $t 5.4vmin, $rd 5.5vmin ),
-      radial-gradient( 1.6vmin 1vmin at 68% 99%, $rd 3vmin, $rl 3.1vmin ),
+      radial-gradient( 1.6vmin 1vmin at 66% 99.2%, $rd 3vmin, $rl 3.1vmin ),
       $rl;
 
     &::before {
@@ -598,8 +597,8 @@ body {
     left: 33.3%;
     transform: rotate( -7deg );
     background:
-      radial-gradient( 1.6vmin 1vmin at 55% 75%, $t 2.4vmin, $rd 2.5vmin ),
-      radial-gradient( 1.6vmin 1vmin at 45% 75%, $t 2.4vmin, $rd 2.5vmin ),
+      radial-gradient( 1.6vmin 1vmin at 40% 75%, $t 2.4vmin, $rd 2.5vmin ),
+      radial-gradient( 1.6vmin 1vmin at 40% 75%, $t 2.4vmin, $rd 2.5vmin ),
       $rl;
 
     &::before {
@@ -638,14 +637,24 @@ body {
 }
 
 .fire {
-  &__front {
+  &--f,
+  &--b {
     @include w-h( 58vmin, 58vmin );
     position: absolute;
     border-radius: 50%;
-    bottom: 5%;
     background: radial-gradient( circle at 15% 10%, $t 62%, rgba( $bu, 0.25 ) 63% );
     filter: blur( 1.5vmin );
-    transform: skew( 10deg );
     box-shadow: 1vmin 0.5vmin 0 0 $bu;
+  }
+
+  &--f {
+    bottom: 5%;
+    transform: skew( 10deg );
+  }
+
+  &--b {
+    top: -10%;
+    left: -10%;
+    transform: rotate( 110deg );
   }
 }
