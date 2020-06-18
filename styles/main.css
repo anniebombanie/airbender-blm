@@ -11,8 +11,8 @@ html {
 /* --- Colours --- */
 body {
   margin: 0;
-  background: radial-gradient(circle, transparent 50%, #000 150%), -webkit-gradient(linear, left top, left bottom, from(#4f6c7e), to(#a45216));
-  background: radial-gradient(circle, transparent 50%, #000 150%), linear-gradient(#4f6c7e, #a45216);
+  background: radial-gradient(circle, transparent 50%, #000 150%), -webkit-gradient(linear, left top, left bottom, from(#7596a9), to(#a45216));
+  background: radial-gradient(circle, transparent 50%, #000 150%), linear-gradient(#7596a9, #a45216);
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,16 +26,26 @@ body {
   overflow: hidden;
 }
 
-.mountains {
-  -webkit-clip-path: polygon(0 35%, 7% 28%, 12% 38%, 20% 30%, 26% 34%, 37% 12%, 47% 26%, 55% 32%, 65% 20%, 72% 26%, 79% 17%, 83% 33%, 89% 29%, 94% 39%, 100% 34%, 100% 100%, 0 100%);
-          clip-path: polygon(0 35%, 7% 28%, 12% 38%, 20% 30%, 26% 34%, 37% 12%, 47% 26%, 55% 32%, 65% 20%, 72% 26%, 79% 17%, 83% 33%, 89% 29%, 94% 39%, 100% 34%, 100% 100%, 0 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#2b3c46), color-stop(20%, #3d5462), color-stop(60%, #3d5462), color-stop(99%, #4f6c7e)), rgba(61, 84, 98, 0.2);
-  background: linear-gradient(#2b3c46, #3d5462 20%, #3d5462 60%, #4f6c7e 99%), rgba(61, 84, 98, 0.2);
+.mountains--1, .mountains--2 {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.mountains--1 {
+  -webkit-clip-path: polygon(0 35%, 7% 28%, 12% 38%, 20% 30%, 26% 34%, 37% 12%, 47% 28%, 55% 34%, 62% 20%, 70% 26%, 76% 17%, 85% 33%, 88% 29%, 94% 39%, 100% 34%, 100% 100%, 0 100%);
+          clip-path: polygon(0 35%, 7% 28%, 12% 38%, 20% 30%, 26% 34%, 37% 12%, 47% 28%, 55% 34%, 62% 20%, 70% 26%, 76% 17%, 85% 33%, 88% 29%, 94% 39%, 100% 34%, 100% 100%, 0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #3d5462), to(#161e23));
+  background: linear-gradient(#3d5462 60%, #161e23);
+}
+
+.mountains--2 {
+  -webkit-clip-path: polygon(0 55%, 8% 60%, 18% 74%, 25% 69%, 31% 70%, 38% 77%, 58% 79%, 67% 73%, 72% 68%, 86% 68%, 93% 64%, 96% 54%, 100% 48%, 100% 100%, 0 100%);
+          clip-path: polygon(0 55%, 8% 60%, 18% 74%, 25% 69%, 31% 70%, 38% 77%, 58% 79%, 67% 73%, 72% 68%, 86% 68%, 93% 64%, 96% 54%, 100% 48%, 100% 100%, 0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #3d5462), to(#161e23));
+  background: linear-gradient(#3d5462 40%, #161e23);
 }
 
 .aang-container {
@@ -708,7 +718,7 @@ body {
   position: absolute;
   border-radius: 50%;
   top: -60%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.12);
   -webkit-box-shadow: 0 0 3vmin 0 rgba(255, 255, 255, 0.1), 0 0 2vmin 0 rgba(142, 255, 253, 0.1), 0 0 5.2vmin 0 rgba(142, 255, 253, 0.1), 0 0 7vmin 0 rgba(142, 255, 253, 0.1);
           box-shadow: 0 0 3vmin 0 rgba(255, 255, 255, 0.1), 0 0 2vmin 0 rgba(142, 255, 253, 0.1), 0 0 5.2vmin 0 rgba(142, 255, 253, 0.1), 0 0 7vmin 0 rgba(142, 255, 253, 0.1);
 }
