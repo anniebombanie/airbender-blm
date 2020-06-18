@@ -11,8 +11,8 @@ html {
 /* --- Colours --- */
 body {
   margin: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2b3c46), color-stop(20%, #3d5462), color-stop(60%, #3d5462), color-stop(99%, #4d6a7b));
-  background: linear-gradient(#2b3c46, #3d5462 20%, #3d5462 60%, #4d6a7b 99%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#2b3c46), color-stop(20%, #3d5462), color-stop(60%, #3d5462), color-stop(99%, #2b3c46));
+  background: linear-gradient(#2b3c46, #3d5462 20%, #3d5462 60%, #2b3c46 99%);
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -407,9 +407,9 @@ body {
 
 .arm__r::after {
   border-radius: 20% 20% 10% 80% / 30% 10% 10% 90%;
-  left: -4%;
-  -webkit-transform: rotate(-15deg);
-          transform: rotate(-15deg);
+  left: 4%;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
 
 .sleeve__l, .sleeve__r {
@@ -441,13 +441,23 @@ body {
   height: 1.5%;
   border-radius: 30% / 80%;
   background-color: #d1a47b;
-  -webkit-box-shadow: 0vmin -1vmin 0 0 #d1a47b, 0.3vmin -2vmin 0 0 #d1a47b, 0.7vmin -3vmin 0 -0.15vmin #d1a47b;
-          box-shadow: 0vmin -1vmin 0 0 #d1a47b, 0.3vmin -2vmin 0 0 #d1a47b, 0.7vmin -3vmin 0 -0.15vmin #d1a47b;
   position: absolute;
+}
+
+.fingers__l {
   top: 17.5%;
   left: 19.8%;
   -webkit-transform: rotate(-8deg);
           transform: rotate(-8deg);
+  -webkit-box-shadow: 0vmin -1vmin 0 0 #d1a47b, 0.3vmin -2vmin 0 0 #d1a47b, 0.7vmin -3vmin 0 -0.15vmin #d1a47b;
+          box-shadow: 0vmin -1vmin 0 0 #d1a47b, 0.3vmin -2vmin 0 0 #d1a47b, 0.7vmin -3vmin 0 -0.15vmin #d1a47b;
+}
+
+.fingers__r {
+  top: 17%;
+  left: 72.5%;
+  -webkit-box-shadow: 0.4vmin -1vmin 0 0 #d1a47b, 0.2vmin -2vmin 0 0 #d1a47b, 0vmin -3vmin 0 -0.15vmin #d1a47b;
+          box-shadow: 0.4vmin -1vmin 0 0 #d1a47b, 0.2vmin -2vmin 0 0 #d1a47b, 0vmin -3vmin 0 -0.15vmin #d1a47b;
 }
 
 .torso {
@@ -663,7 +673,7 @@ body {
 
 .fire--b {
   top: -10%;
-  left: -10%;
-  -webkit-transform: rotate(110deg);
-          transform: rotate(110deg);
+  left: -15%;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }

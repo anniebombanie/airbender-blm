@@ -42,7 +42,7 @@ body {
   margin: 0;
   background:
     // linear-gradient( -10deg, darken( $n, 9 ), $t ),
-    linear-gradient( darken( $n, 9 ), $n 20%, $n 60%, lighten( $n, 8 ) 99% );
+    linear-gradient( darken( $n, 9 ), $n 20%, $n 60%, darken( $n, 9 ) 99% );
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -398,8 +398,8 @@ body {
 
     &::after {
       border-radius: 20% 20% 10% 80% / 30% 10% 10% 90%;
-      left: -4%;
-      transform: rotate( -15deg );
+      left: 4%;
+      transform: rotate( 10deg );
     }
   }
 }
@@ -440,17 +440,31 @@ body {
     @include w-h( 8%, 1.5% );
     border-radius: 30% / 80%;
     background-color: $sd;
+    position: absolute;
+    // background:
+    //   radial-gradient( 3% 1% at 45% 50%, $od 1.6vmin, $t 1.7vmin );
+  }
+
+  &__l {
+    top: 17.5%;
+    left: 19.8%;
+    transform: rotate( -8deg );
     box-shadow:
       0vmin -1vmin 0 0 $sd, /* top */
       0.3vmin -2vmin 0 0 $sd,
       0.7vmin -3vmin 0 -0.15vmin $sd;
-    position: absolute;
-    top: 17.5%;
-    left: 19.8%;
-    transform: rotate( -8deg );
-    // background:
-    //   radial-gradient( 3% 1% at 45% 50%, $od 1.6vmin, $t 1.7vmin );
   }
+
+  &__r {
+    top: 17%;
+    left: 72.5%;
+    box-shadow:
+      0.4vmin -1vmin 0 0 $sd, /* bottom */
+      0.2vmin -2vmin 0 0 $sd,
+      0vmin -3vmin 0 -0.15vmin $sd;
+  }
+
+
 }
 
 .torso {
@@ -654,7 +668,7 @@ body {
 
   &--b {
     top: -10%;
-    left: -10%;
-    transform: rotate( 110deg );
+    left: -15%;
+    transform: rotate( 135deg );
   }
 }
