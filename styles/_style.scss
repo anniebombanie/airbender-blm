@@ -68,7 +68,7 @@ body {
   }
 
   &--2 {
-    clip-path: polygon(0 55%, 8% 60%, 18% 74%, 25% 69%, 31% 70%, 38% 73%, 58% 75%, 67% 73%, 72% 68%, 86% 68%, 93% 64%, 96% 54%, 100% 48%, 100% 100%, 0 100%);
+    clip-path: polygon(0 55%, 8% 60%, 18% 74%, 25% 69%, 31% 70%, 38% 74%, 58% 75.5%, 67% 73%, 72% 68%, 86% 68%, 93% 64%, 96% 54%, 100% 48%, 100% 100%, 0 100%);
     background:
     linear-gradient( $n 40%, darken( $n, 20% ));
   }
@@ -258,7 +258,7 @@ body {
   // neck
   &::before {
     @include pseduo-div( 50%, 60%, $sd );
-    border-radius: 0 0 50% 50%;
+    // border-radius: 0 0 50% 50%;
     top: 24%;
     left: 24%;
   }
@@ -273,7 +273,7 @@ body {
 
     &::after {
       @include pseduo-div( 45%, 53%, null );
-      top: 39%;
+      top: 35%;
     }
   }
 
@@ -289,10 +289,10 @@ body {
 
     // center bottom curve
     &::before {
-      @include pseduo-div( 90%, 14%, null );
-      top: 85%;
-      left: 100%;
-      background: linear-gradient( $t 35%, $ym 35% );
+      @include pseduo-div( 100%, 14%, null );
+      top: 84%;
+      left: 94%;
+      background: linear-gradient( $t 20%, $ym 20% );
       border-radius: 50%;
     }
   }
