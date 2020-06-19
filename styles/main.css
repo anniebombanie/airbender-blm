@@ -11,10 +11,9 @@ html {
 /* --- Colours --- */
 body {
   margin: 0;
-  background: radial-gradient(circle, transparent 50%, #000 150%), -webkit-gradient(linear, left top, left bottom, from(#7596a9), to(#a45216));
-  background: radial-gradient(circle, transparent 50%, #000 150%), linear-gradient(#7596a9, #a45216);
+  background: -webkit-gradient(linear, left top, left bottom, from(#7596a9), to(#a45216));
+  background: linear-gradient(#7596a9, #a45216);
   height: 100vh;
-  max-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -721,4 +720,11 @@ body {
   -webkit-box-shadow: 0 0 3vmin 0 rgba(255, 255, 255, 0.1), 0 0 2vmin 0 rgba(142, 255, 253, 0.1), 0 0 5.2vmin 0 rgba(142, 255, 253, 0.1), 0 0 7vmin 0 rgba(142, 255, 253, 0.1);
           box-shadow: 0 0 3vmin 0 rgba(255, 255, 255, 0.1), 0 0 2vmin 0 rgba(142, 255, 253, 0.1), 0 0 5.2vmin 0 rgba(142, 255, 253, 0.1), 0 0 7vmin 0 rgba(142, 255, 253, 0.1);
   overflow: hidden;
+}
+
+.vingette {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: radial-gradient(circle, transparent 65%, #000 180%);
 }
