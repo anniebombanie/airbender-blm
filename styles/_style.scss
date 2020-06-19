@@ -74,7 +74,7 @@ body {
   }
 }
 
-.aang-container {
+.aang {
   @include w-h( 50vmin, 90vmin );
   // box-shadow: 0 2vmin 2vmin -2vmin darken( $n, 5 );
   display: flex;
@@ -83,7 +83,6 @@ body {
   position: relative;
   // background: url('../resources/drawing.jpg') 150% 0% no-repeat;
   // background-size: auto 101%;
-  overflow: hidden;
 }
 
 .sign {
@@ -682,35 +681,38 @@ body {
   &--b {
     @include w-h( 58vmin, 58vmin );
     position: absolute;
+    top: 50%;
+    left: 50%;
     border-radius: 50%;
-    background: radial-gradient( circle at 10% 10%, $t 62%, rgba( $bu, 0.25 ) 63% );
+    background: radial-gradient( circle at 10% 10%, $t 62%, rgba( $bu, 0.35 ) 63% );
     filter: blur( 1.5vmin );
     box-shadow: 1vmin 0.5vmin 0 0 $bu;
+    // overflow: hidden;
   }
 
   &--f {
-    bottom: 5%;
-    transform: skew( 20deg) rotate( 5deg );
-    // left: 15%;
+    transform: translate3d( -50%, -30%, 0 ) skew( 20deg);
     animation: glow 3s infinite ease-in-out;
     animation-delay: 0.5s;
   }
 
   &--b {
-    top: -10%;
-    left: -15%;
-    transform: rotate( 135deg );
+    transform: translate3d( -45%, -75%, 0 ) rotate( 125deg );
     animation: glow 3s infinite ease-in-out;
-
-    &::before {
-      @include pseduo-div( 150%, 150%, null );
-      border-radius: 50%;
-      top: -60%;
-      background-color: rgba( $wh, 0.12 );
-      box-shadow: 0 0 3vmin 0 rgba( $wh, 0.1 ), 0 0 2vmin 0 rgba( $bu, 0.1 ), 0 0 5.2vmin 0 rgba( $bu, 0.1 ), 0 0 7vmin 0 rgba( $bu, 0.1 );
-      // z-index: 10;
-    }
   }
+}
+
+.circle {
+  @include w-h( 75vmin, 75vmin );
+  top: 50%;
+  left: 50%;
+  filter: blur( 1.5vmin );
+  transform: translate3d( -50%, -45%, 0 );
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgba( $wh, 0.12 );
+  box-shadow: 0 0 3vmin 0 rgba( $wh, 0.1 ), 0 0 2vmin 0 rgba( $bu, 0.1 ), 0 0 5.2vmin 0 rgba( $bu, 0.1 ), 0 0 7vmin 0 rgba( $bu, 0.1 );
+  overflow: hidden;
 }
 
 // @keyframes glow {
@@ -730,16 +732,16 @@ body {
 //   }
 // }
 
-@keyframes blur {
-  0% {
-    filter: blur( 1vmin );
-  }
+// @keyframes blur {
+//   0% {
+//     filter: blur( 1vmin );
+//   }
 
-  50% {
-    filter: blur( 2.5vmin );
-  }
+//   50% {
+//     filter: blur( 2.5vmin );
+//   }
 
-  100% {
-    filter: blur( 1vmin );
-  }
-}
+//   100% {
+//     filter: blur( 1vmin );
+//   }
+// }

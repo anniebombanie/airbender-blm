@@ -49,7 +49,7 @@ body {
   background: linear-gradient(#3d5462 40%, #161e23);
 }
 
-.aang-container {
+.aang {
   width: 50vmin;
   height: 90vmin;
   display: -webkit-box;
@@ -63,7 +63,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  overflow: hidden;
 }
 
 .sign {
@@ -682,8 +681,10 @@ body {
   width: 58vmin;
   height: 58vmin;
   position: absolute;
+  top: 50%;
+  left: 50%;
   border-radius: 50%;
-  background: radial-gradient(circle at 10% 10%, transparent 62%, rgba(142, 255, 253, 0.25) 63%);
+  background: radial-gradient(circle at 10% 10%, transparent 62%, rgba(142, 255, 253, 0.35) 63%);
   -webkit-filter: blur(1.5vmin);
           filter: blur(1.5vmin);
   -webkit-box-shadow: 1vmin 0.5vmin 0 0 #8efffd;
@@ -691,9 +692,8 @@ body {
 }
 
 .fire--f {
-  bottom: 5%;
-  -webkit-transform: skew(20deg) rotate(5deg);
-          transform: skew(20deg) rotate(5deg);
+  -webkit-transform: translate3d(-50%, -30%, 0) skew(20deg);
+          transform: translate3d(-50%, -30%, 0) skew(20deg);
   -webkit-animation: glow 3s infinite ease-in-out;
           animation: glow 3s infinite ease-in-out;
   -webkit-animation-delay: 0.5s;
@@ -701,53 +701,25 @@ body {
 }
 
 .fire--b {
-  top: -10%;
-  left: -15%;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  -webkit-transform: translate3d(-45%, -75%, 0) rotate(125deg);
+          transform: translate3d(-45%, -75%, 0) rotate(125deg);
   -webkit-animation: glow 3s infinite ease-in-out;
           animation: glow 3s infinite ease-in-out;
 }
 
-.fire--b::before {
-  content: '';
-  width: 150%;
-  height: 150%;
-  display: block;
-  position: absolute;
+.circle {
+  width: 75vmin;
+  height: 75vmin;
+  top: 50%;
+  left: 50%;
+  -webkit-filter: blur(1.5vmin);
+          filter: blur(1.5vmin);
+  -webkit-transform: translate3d(-50%, -45%, 0);
+          transform: translate3d(-50%, -45%, 0);
   border-radius: 50%;
-  top: -60%;
+  position: absolute;
   background-color: rgba(255, 255, 255, 0.12);
   -webkit-box-shadow: 0 0 3vmin 0 rgba(255, 255, 255, 0.1), 0 0 2vmin 0 rgba(142, 255, 253, 0.1), 0 0 5.2vmin 0 rgba(142, 255, 253, 0.1), 0 0 7vmin 0 rgba(142, 255, 253, 0.1);
           box-shadow: 0 0 3vmin 0 rgba(255, 255, 255, 0.1), 0 0 2vmin 0 rgba(142, 255, 253, 0.1), 0 0 5.2vmin 0 rgba(142, 255, 253, 0.1), 0 0 7vmin 0 rgba(142, 255, 253, 0.1);
-}
-
-@-webkit-keyframes blur {
-  0% {
-    -webkit-filter: blur(1vmin);
-            filter: blur(1vmin);
-  }
-  50% {
-    -webkit-filter: blur(2.5vmin);
-            filter: blur(2.5vmin);
-  }
-  100% {
-    -webkit-filter: blur(1vmin);
-            filter: blur(1vmin);
-  }
-}
-
-@keyframes blur {
-  0% {
-    -webkit-filter: blur(1vmin);
-            filter: blur(1vmin);
-  }
-  50% {
-    -webkit-filter: blur(2.5vmin);
-            filter: blur(2.5vmin);
-  }
-  100% {
-    -webkit-filter: blur(1vmin);
-            filter: blur(1vmin);
-  }
+  overflow: hidden;
 }
