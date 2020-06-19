@@ -43,7 +43,8 @@ body {
   background:
     radial-gradient( circle, $t 50%, $blk 150%),
     linear-gradient( lighten( $n, 25 ), $od );
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,8 +54,8 @@ body {
 .mountains {
   &--1,
   &--2 {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -67,7 +68,7 @@ body {
   }
 
   &--2 {
-    clip-path: polygon(0 55%, 8% 60%, 18% 74%, 25% 69%, 31% 70%, 38% 77%, 58% 79%, 67% 73%, 72% 68%, 86% 68%, 93% 64%, 96% 54%, 100% 48%, 100% 100%, 0 100%);
+    clip-path: polygon(0 55%, 8% 60%, 18% 74%, 25% 69%, 31% 70%, 38% 73%, 58% 75%, 67% 73%, 72% 68%, 86% 68%, 93% 64%, 96% 54%, 100% 48%, 100% 100%, 0 100%);
     background:
     linear-gradient( $n 40%, darken( $n, 20% ));
   }
@@ -75,13 +76,14 @@ body {
 
 .aang-container {
   @include w-h( 50vmin, 90vmin );
-  box-shadow: 0 2vmin 2vmin -2vmin darken( $n, 5 );
+  // box-shadow: 0 2vmin 2vmin -2vmin darken( $n, 5 );
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   // background: url('../resources/drawing.jpg') 150% 0% no-repeat;
-  background-size: auto 101%;
+  // background-size: auto 101%;
+  overflow: hidden;
 }
 
 .sign {
@@ -278,7 +280,7 @@ body {
 
   &__l {
     background: linear-gradient( 26deg, $od 28%, $ym calc( 28% + 1px ), $ym 68%, $yl 70%, $t calc( 70% + 1px ));
-    left: 39.2%;
+    left: 39.3%;
     border-radius: 0 0 0 100% / 0 0 0 60%;
 
     &::after {
@@ -302,7 +304,7 @@ body {
     border-radius: 0 0 100% 0 / 0 0 60% 0;
 
     &::after {
-      left: -44%;
+      left: -45%;
       background: linear-gradient( -58deg, $ym 50%, $t 51% );
     }
   }
