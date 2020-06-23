@@ -83,10 +83,11 @@ body {
 }
 
 .sign {
-  @include w-h( 54%, 22% );
+  @include w-h( 52%, 22% );
   position: absolute;
-  top: -2.5%;
-  transform: rotate( -2.5deg );
+  top: -2.8%;
+  left: 22%;
+  transform: rotate( -4deg );
   background: linear-gradient( 165deg, darken( $wh, 9 ) 65%, darken( $wh, 2 ) 66% );
 
   svg {
@@ -327,7 +328,7 @@ body {
     top: 19%;
     background:
       linear-gradient( -5deg, $t 96%, $ol 96.5% ),
-      radial-gradient( 2% 4% at 77% 16%, $od 4.6vmin, $t 4.7vmin ),
+      radial-gradient( 2% 4% at 77% 11%, $od 4.6vmin, $t 4.7vmin ),
       linear-gradient( 90deg, $od 80%, $t 80.5% );
     transform: rotate( 45deg );
   }
@@ -357,15 +358,15 @@ body {
     // Hand
     &::after {
       @include pseduo-div( 70%, 35%, $sd );
-      top: -23%;
+      top: -30%;
       transform: rotate( -95deg );
     }
   }
 
   &__l {
-    top: 20.5%;
+    top: 21.4%;
     left: 18%;
-    transform: rotate( 10deg );
+    transform: rotate( 13deg );
     border-radius: 40% 40% 0 30% / 40% 70% 0 30%;
     background:
       linear-gradient( 93deg, $t 80%, $yl 81% ),
@@ -374,13 +375,14 @@ body {
       $ym;
 
     &::before {
-      top: 76%;
-      left: 40%;
-      transform: rotate( -60deg );
-      box-shadow: inset 0.0vmin 0.5vmin 0 0 $ym;
+      // border: 1px dashed green;
+      top: 72%;
+      left: 42%;
+      transform: rotate( -62deg );
       border-radius: 50% 5% 20% 0 / 70% 50% 40% 0;
       background:
-        linear-gradient( $ym 28%, $t 29% ),
+        linear-gradient( $ym 20%, $t 29% ),
+        linear-gradient( $ym 20%, $t 29% ),
         radial-gradient( 4% 1% at 50% 60%, $t 4vmin, $ym 4.2vmin ),
         linear-gradient( 90deg, $t 60%, $od 61%, $od 83%, $ol 84% ),
         radial-gradient( 4% 1% at 50% 77%, $ym 4vmin, $t 4.2vmin ),
@@ -389,8 +391,8 @@ body {
 
     &::after {
       border-radius: 20% 20% 10% 80% / 30% 10% 10% 90%;
-      left: 0%;
-      transform: rotate( -10deg );
+      left: -10%;
+      transform: rotate( -20deg );
     }
   }
 
@@ -431,18 +433,19 @@ body {
 .sleeve {
   &__l,
   &__r {
-    @include w-h( 7%, 1.4% );
+    @include w-h( 6.2%, 1.4% );
     position: absolute;
     // border: 1px solid $wh;
   }
 
   &__l {
-    top: 20.5%;
-    left: 20%;
-    transform: rotate( 5deg );
+    top: 21.1%;
+    left: 21.5%;
+    transform: rotate( 10deg );
     border-radius: 10% 10% 30% 30%;
+    // border: 1px dashed white;
     background:
-      linear-gradient( 80deg, $t 9%, $ym 12%, $ym 80%, $t 81% ),
+      linear-gradient( 70deg, $t 5%, $ym 8%, $ym 80%, $t 81% ),
       linear-gradient( -80deg, $t 5%, $ym 7%, $ym 80%, $t 81% );
   }
 
@@ -470,7 +473,7 @@ body {
 
   &__l {
     top: 17.5%;
-    left: 19.8%;
+    left: 19.9%;
     transform: rotate( -8deg );
     box-shadow:
       0vmin -1vmin 0 0 $sd, /* top */
@@ -522,8 +525,8 @@ body {
   &__shadow {
     @include w-h( 26.2%, 11% );
     position: absolute;
-    border-radius: 0 0 48% 45%;
-    top: 48.8%;
+    border-radius: 0 0 47% 45%;
+    top: 48.9%;
     left: 36.9%;
     overflow: hidden;
     // border: 1px dotted green;
