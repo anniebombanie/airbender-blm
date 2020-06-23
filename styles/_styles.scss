@@ -87,7 +87,7 @@ body {
   position: absolute;
   top: -2.8%;
   left: 22%;
-  transform: rotate( -4deg );
+  transform: rotate( -6deg );
   background: linear-gradient( 165deg, darken( $wh, 9 ) 65%, darken( $wh, 2 ) 66% );
 
   svg {
@@ -357,7 +357,6 @@ body {
 
     // Hand
     &::after {
-      @include pseduo-div( 70%, 35%, $sd );
       top: -30%;
       transform: rotate( -95deg );
     }
@@ -390,6 +389,7 @@ body {
     }
 
     &::after {
+      @include pseduo-div( 70%, 35%, $sd );
       border-radius: 20% 20% 10% 80% / 30% 10% 10% 90%;
       left: -10%;
       transform: rotate( -20deg );
@@ -397,22 +397,22 @@ body {
   }
 
   &__r {
-    top: 20.2%;
-    left: 74%;
-    transform: rotate( -3deg );
+    top: 20.4%;
+    left: 77%;
+    transform: rotate( 10deg );
     border-radius: 40% 40% 30% 0 / 40% 70% 30% 0;
     background:
       linear-gradient( 85deg, $yl 18%, $t 1% ),
-      radial-gradient( 4% 1% at 50% 47%, $ym 4vmin, $t 4.2vmin ),
-      radial-gradient( 4% 1% at 50% 39%, $od 4vmin, $t 4.2vmin ),
+      radial-gradient( 4% 1% at 50% 44%, $ym 4vmin, $t 4.2vmin ),
+      radial-gradient( 4% 1% at 50% 36%, $od 4vmin, $t 4.2vmin ),
       $ym;
 
     &::before {
-      top: 73%;
-      left: -45%;
+      top: 74%;
+      left: -32%;
       // border: 1px dashed green;
-      transform: rotate( 45deg );
-      box-shadow: inset 0.0vmin 0.5vmin 0 0 $ym;
+      transform: rotate( 30deg );
+      // box-shadow: inset 0.0vmin 0.5vmin 0 0 $ym;
       border-radius: 5% 50% 0 20% / 50% 70% 0 40%;
       background:
         linear-gradient( $ym 28%, $t 29% ),
@@ -423,8 +423,9 @@ body {
     }
 
     &::after {
-      border-radius: 20% 20% 10% 80% / 30% 10% 10% 90%;
-      left: 4%;
+      @include pseduo-div( 77%, 35%, $sd );
+      border-radius: 50% 50% 10% 80% / 50% 50% 10% 90%;
+      left: 6.2%;
       transform: rotate( 10deg );
     }
   }
@@ -433,12 +434,12 @@ body {
 .sleeve {
   &__l,
   &__r {
-    @include w-h( 6.2%, 1.4% );
     position: absolute;
     // border: 1px solid $wh;
   }
 
   &__l {
+    @include w-h( 6.2%, 1.4% );
     top: 21.1%;
     left: 21.5%;
     transform: rotate( 10deg );
@@ -450,9 +451,10 @@ body {
   }
 
   &__r {
-    top: 21%;
-    left: 73.4%;
-    transform: rotate( -5deg );
+    @include w-h( 6.6%, 1.4% );
+    top: 20.5%;
+    left: 79.5%;
+    transform: rotate( 12deg );
     border-radius: 10% 10% 30% 30%;
     background:
       linear-gradient( 80deg, $t 9%, $ym 12%, $ym 80%, $t 81% ),
@@ -483,14 +485,13 @@ body {
 
   &__r {
     top: 17%;
-    left: 72.5%;
+    left: 81.5%;
+    transform: rotate( -90deg );
     box-shadow:
       0.4vmin -1vmin 0 0 $sd, /* bottom */
       0.2vmin -2vmin 0 0 $sd,
       0vmin -3vmin 0 -0.15vmin $sd;
   }
-
-
 }
 
 .torso {
