@@ -311,7 +311,7 @@ body {
   @include w-h( 58%, 35% );
   border-radius: 50% / 40% 40% 60% 60%;
   position: absolute;
-  top: 29.5%;
+  top: 30%;
   // border: 1px solid $wh;
   overflow: hidden;
 
@@ -323,12 +323,13 @@ body {
   }
 
   &::before {
-    left: -41%;
+    left: -38%;
+    top: 19%;
     background:
       linear-gradient( -5deg, $t 96%, $ol 96.5% ),
-      radial-gradient( 2% 4% at 77% 6%, $od 4.6vmin, $t 4.7vmin ),
+      radial-gradient( 2% 4% at 77% 16%, $od 4.6vmin, $t 4.7vmin ),
       linear-gradient( 90deg, $od 80%, $t 80.5% );
-    transform: rotate( 50deg );
+    transform: rotate( 45deg );
   }
 
   &::after {
@@ -362,9 +363,9 @@ body {
   }
 
   &__l {
-    top: 20.2%;
-    left: 18.5%;
-    transform: rotate( 7deg );
+    top: 20.5%;
+    left: 18%;
+    transform: rotate( 10deg );
     border-radius: 40% 40% 0 30% / 40% 70% 0 30%;
     background:
       linear-gradient( 93deg, $t 80%, $yl 81% ),
@@ -373,9 +374,9 @@ body {
       $ym;
 
     &::before {
-      top: 75%;
-      left: 32%;
-      transform: rotate( -46deg );
+      top: 76%;
+      left: 40%;
+      transform: rotate( -60deg );
       box-shadow: inset 0.0vmin 0.5vmin 0 0 $ym;
       border-radius: 50% 5% 20% 0 / 70% 50% 40% 0;
       background:
@@ -387,7 +388,6 @@ body {
     }
 
     &::after {
-      // @include pseduo-div( 100%, 40%, green );
       border-radius: 20% 20% 10% 80% / 30% 10% 10% 90%;
       left: 0%;
       transform: rotate( -10deg );
@@ -512,17 +512,17 @@ body {
   }
 
   &::after {
-    @include pseduo-div( 108%, 60%, $ym );
+    @include pseduo-div( 108%, 58%, $ym );
     position: absolute;
     border-radius: 50%;
-    top: 16%;
+    top: 18%;
     left: -4%;
   }
 
   &__shadow {
     @include w-h( 26.2%, 11% );
     position: absolute;
-    border-radius: 0 0 48% 48%;
+    border-radius: 0 0 48% 45%;
     top: 48.8%;
     left: 36.9%;
     overflow: hidden;
@@ -536,12 +536,13 @@ body {
     }
 
     &::before {
+      top: 6%;
       left: -59%;
       transform: rotate( -33deg );
     }
 
     &::after {
-      left: 37%;
+      left: 34%;
       transform: rotate( 33deg );
     }
   }
