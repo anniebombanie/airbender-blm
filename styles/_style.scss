@@ -718,30 +718,30 @@ body {
   background: radial-gradient( circle, $t 60%, $blk 150%);
 }
 
-@keyframes glow {
-  0% {
-    opacity: 1;
-  }
+// @keyframes glow {
+//   0% {
+//     opacity: 1;
+//   }
 
-  50% {
-    opacity: 0.6;
-  }
+//   50% {
+//     opacity: 0.6;
+//   }
 
-  100% {
-    opacity: 1;
-  }
-}
+//   100% {
+//     opacity: 1;
+//   }
+// }
 
-@keyframes blur {
-  0% {
-    filter: blur( 1.5vmin );
-  }
+// @keyframes blur {
+//   0% {
+//     filter: blur( 1.5vmin );
+//   }
 
-  50% {
-    filter: blur( 2.5vmin );
-  }
+//   50% {
+//     filter: blur( 2.5vmin );
+//   }
 
-  100% {
-    filter: blur( 1.5vmin );
-  }
-}
+//   100% {
+//     filter: blur( 1.5vmin );
+//   }
+// }
