@@ -357,13 +357,13 @@ body {
 
     // Hand
     &::after {
-      top: -30%;
+      top: -28%;
       transform: rotate( -95deg );
     }
   }
 
   &__l {
-    top: 21.4%;
+    top: 21.2%;
     left: 18%;
     transform: rotate( 13deg );
     border-radius: 40% 40% 0 30% / 40% 70% 0 30%;
@@ -397,9 +397,9 @@ body {
   }
 
   &__r {
-    top: 20.4%;
+    top: 20.6%;
     left: 77%;
-    transform: rotate( 10deg );
+    transform: rotate( 8deg );
     border-radius: 40% 40% 30% 0 / 40% 70% 30% 0;
     background:
       linear-gradient( 85deg, $yl 18%, $t 1% ),
@@ -408,10 +408,10 @@ body {
       $ym;
 
     &::before {
-      top: 74%;
+      top: 69%;
       left: -32%;
       // border: 1px dashed green;
-      transform: rotate( 30deg );
+      transform: rotate( 35deg );
       // box-shadow: inset 0.0vmin 0.5vmin 0 0 $ym;
       border-radius: 5% 50% 0 20% / 50% 70% 0 40%;
       background:
@@ -425,7 +425,7 @@ body {
     &::after {
       @include pseduo-div( 77%, 35%, $sd );
       border-radius: 50% 50% 10% 80% / 50% 50% 10% 90%;
-      left: 6.2%;
+      left: 6%;
       transform: rotate( 10deg );
     }
   }
@@ -440,21 +440,21 @@ body {
 
   &__l {
     @include w-h( 6.2%, 1.4% );
-    top: 21.1%;
+    top: 21.5%;
     left: 21.5%;
     transform: rotate( 10deg );
     border-radius: 10% 10% 30% 30%;
     // border: 1px dashed white;
     background:
-      linear-gradient( 70deg, $t 5%, $ym 8%, $ym 80%, $t 81% ),
+      linear-gradient( 70deg, $t 5%, $ym 9%, $ym 70%, $t 71% ),
       linear-gradient( -80deg, $t 5%, $ym 7%, $ym 80%, $t 81% );
   }
 
   &__r {
     @include w-h( 6.6%, 1.4% );
-    top: 20.5%;
-    left: 79.5%;
-    transform: rotate( 12deg );
+    top: 20.6%;
+    left: 79%;
+    transform: rotate( 5deg );
     border-radius: 10% 10% 30% 30%;
     background:
       linear-gradient( 80deg, $t 9%, $ym 12%, $ym 80%, $t 81% ),
@@ -474,7 +474,7 @@ body {
   }
 
   &__l {
-    top: 17.5%;
+    top: 18%;
     left: 19.9%;
     transform: rotate( -8deg );
     box-shadow:
@@ -516,11 +516,11 @@ body {
   }
 
   &::after {
-    @include pseduo-div( 108%, 58%, $ym );
+    @include pseduo-div( 106%, 56%, $ym );
     position: absolute;
     border-radius: 50%;
-    top: 18%;
-    left: -4%;
+    top: 22%;
+    left: -3%;
   }
 
   &__shadow {
