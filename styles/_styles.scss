@@ -88,7 +88,7 @@ body {
   top: -2.8%;
   left: 22%;
   transform: rotate( -6deg );
-  background: linear-gradient( 165deg, darken( $wh, 9 ) 65%, darken( $wh, 2 ) 66% );
+  background: linear-gradient( 165deg, darken( $wh, 22 ) 65%, darken( $wh, 10 ) 66% );
 
   svg {
     @include w-h( 90%, 90% );
@@ -391,7 +391,7 @@ body {
     &::after {
       @include pseduo-div( 70%, 35%, $sd );
       border-radius: 20% 20% 10% 80% / 30% 10% 10% 90%;
-      left: -10%;
+      left: -12%;
       transform: rotate( -20deg );
     }
   }
@@ -423,10 +423,10 @@ body {
     }
 
     &::after {
-      @include pseduo-div( 77%, 35%, $sd );
-      border-radius: 50% 50% 10% 80% / 50% 50% 10% 90%;
-      left: 6%;
-      transform: rotate( 10deg );
+      @include pseduo-div( 76%, 33%, $sd );
+      border-radius: 50% 50% 70% 80% / 50% 50% 60% 90%;
+      left: 5%;
+      transform: rotate( 12deg );
     }
   }
 }
@@ -465,32 +465,63 @@ body {
 .fingers {
   &__l,
   &__r {
-    @include w-h( 8%, 1.5% );
     border-radius: 30% / 80%;
     background-color: $sd;
     position: absolute;
-    // background:
-    //   radial-gradient( 3% 1% at 45% 50%, $od 1.6vmin, $t 1.7vmin );
   }
 
   &__l {
-    top: 18%;
-    left: 19.9%;
+    @include w-h( 7%, 1.5% );
+    top: 18.2%;
+    left: 20%;
     transform: rotate( -8deg );
     box-shadow:
-      0vmin -1vmin 0 0 $sd, /* top */
-      0.3vmin -2vmin 0 0 $sd,
-      0.7vmin -3vmin 0 -0.15vmin $sd;
+      0.2vmin 0 0 0 $sl,
+      -0.2vmin -1.2vmin 0 -0.01vmin $sd,
+      0vmin -1vmin 0 0.1vmin $sl,
+      -0.05vmin -2.4vmin 0 -0.01vmin $sd,
+      0.2vmin -2.2vmin 0 0.1vmin $sl;
+
+    &::after {
+      @include pseduo-div( 90%, 90%, $sd );
+      border-radius: 30% / 80%;
+      transform: rotate( 10deg );
+      top: -230%;
+      left: 18%;
+      box-shadow:
+      inset -0.2vmin 0 0 0 $sl,
+    }
   }
 
   &__r {
-    top: 17%;
-    left: 81.5%;
-    transform: rotate( -90deg );
+    @include w-h( 6%, 1.5% );
+    top: 17.5%;
+    left: 84%;
+    transform: rotate( -70deg );
     box-shadow:
-      0.4vmin -1vmin 0 0 $sd, /* bottom */
-      0.2vmin -2vmin 0 0 $sd,
-      0vmin -3vmin 0 -0.15vmin $sd;
+    inset 0.2vmin 0.2vmin 0 0 $sl,
+      0.6vmin -0.8vmin 0 0 $sd,
+      0.4vmin -1vmin 0 0 $sl,
+      0.4vmin -1.8vmin 0 0 $sd,
+      0.2vmin -2vmin 0 0 $sl,
+      0.4vmin -2.8vmin 0 -0.15vmin $sd,
+      0vmin -3vmin 0 -0.15vmin $sl;
+
+    &::before {
+      @include pseduo-div( 80%, 90%, $sd );
+      border-radius: 30% / 80%;
+      transform: rotate( -35deg );
+      top: -275%;
+      left: -30%;
+    }
+
+    &::after {
+      @include pseduo-div( 80%, 90%, $sd );
+      border-radius: 30% / 80%;
+      transform: rotate( -120deg );
+      top: -270%;
+      left: 0%;
+    }
   }
 }
 

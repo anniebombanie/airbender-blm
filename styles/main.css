@@ -72,7 +72,7 @@ body {
   left: 22%;
   -webkit-transform: rotate(-6deg);
           transform: rotate(-6deg);
-  background: linear-gradient(165deg, #e8e8e8 65%, #fafafa 66%);
+  background: linear-gradient(165deg, #c7c7c7 65%, #e6e6e6 66%);
 }
 
 .sign svg {
@@ -403,7 +403,7 @@ body {
   position: absolute;
   background: #d1a47b;
   border-radius: 20% 20% 10% 80% / 30% 10% 10% 90%;
-  left: -10%;
+  left: -12%;
   -webkit-transform: rotate(-20deg);
           transform: rotate(-20deg);
 }
@@ -429,15 +429,15 @@ body {
 
 .arm__r::after {
   content: '';
-  width: 77%;
-  height: 35%;
+  width: 76%;
+  height: 33%;
   display: block;
   position: absolute;
   background: #d1a47b;
-  border-radius: 50% 50% 10% 80% / 50% 50% 10% 90%;
-  left: 6%;
-  -webkit-transform: rotate(10deg);
-          transform: rotate(10deg);
+  border-radius: 50% 50% 70% 80% / 50% 50% 60% 90%;
+  left: 5%;
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
 }
 
 .sleeve__l, .sleeve__r {
@@ -467,29 +467,75 @@ body {
 }
 
 .fingers__l, .fingers__r {
-  width: 8%;
-  height: 1.5%;
   border-radius: 30% / 80%;
   background-color: #d1a47b;
   position: absolute;
 }
 
 .fingers__l {
-  top: 18%;
-  left: 19.9%;
+  width: 7%;
+  height: 1.5%;
+  top: 18.2%;
+  left: 20%;
   -webkit-transform: rotate(-8deg);
           transform: rotate(-8deg);
-  -webkit-box-shadow: 0vmin -1vmin 0 0 #d1a47b, 0.3vmin -2vmin 0 0 #d1a47b, 0.7vmin -3vmin 0 -0.15vmin #d1a47b;
-          box-shadow: 0vmin -1vmin 0 0 #d1a47b, 0.3vmin -2vmin 0 0 #d1a47b, 0.7vmin -3vmin 0 -0.15vmin #d1a47b;
+  -webkit-box-shadow: 0.2vmin 0 0 0 #fedbbb, -0.2vmin -1.2vmin 0 -0.01vmin #d1a47b, 0vmin -1vmin 0 0.1vmin #fedbbb, -0.05vmin -2.4vmin 0 -0.01vmin #d1a47b, 0.2vmin -2.2vmin 0 0.1vmin #fedbbb;
+          box-shadow: 0.2vmin 0 0 0 #fedbbb, -0.2vmin -1.2vmin 0 -0.01vmin #d1a47b, 0vmin -1vmin 0 0.1vmin #fedbbb, -0.05vmin -2.4vmin 0 -0.01vmin #d1a47b, 0.2vmin -2.2vmin 0 0.1vmin #fedbbb;
+}
+
+.fingers__l::after {
+  content: '';
+  width: 90%;
+  height: 90%;
+  display: block;
+  position: absolute;
+  background: #d1a47b;
+  border-radius: 30% / 80%;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  top: -230%;
+  left: 18%;
+  -webkit-box-shadow: inset -0.2vmin 0 0 0 #fedbbb;
+          box-shadow: inset -0.2vmin 0 0 0 #fedbbb;
 }
 
 .fingers__r {
-  top: 17%;
-  left: 81.5%;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  -webkit-box-shadow: 0.4vmin -1vmin 0 0 #d1a47b, 0.2vmin -2vmin 0 0 #d1a47b, 0vmin -3vmin 0 -0.15vmin #d1a47b;
-          box-shadow: 0.4vmin -1vmin 0 0 #d1a47b, 0.2vmin -2vmin 0 0 #d1a47b, 0vmin -3vmin 0 -0.15vmin #d1a47b;
+  width: 6%;
+  height: 1.5%;
+  top: 17.5%;
+  left: 84%;
+  -webkit-transform: rotate(-70deg);
+          transform: rotate(-70deg);
+  -webkit-box-shadow: inset 0.2vmin 0.2vmin 0 0 #fedbbb, 0.6vmin -0.8vmin 0 0 #d1a47b, 0.4vmin -1vmin 0 0 #fedbbb, 0.4vmin -1.8vmin 0 0 #d1a47b, 0.2vmin -2vmin 0 0 #fedbbb, 0.4vmin -2.8vmin 0 -0.15vmin #d1a47b, 0vmin -3vmin 0 -0.15vmin #fedbbb;
+          box-shadow: inset 0.2vmin 0.2vmin 0 0 #fedbbb, 0.6vmin -0.8vmin 0 0 #d1a47b, 0.4vmin -1vmin 0 0 #fedbbb, 0.4vmin -1.8vmin 0 0 #d1a47b, 0.2vmin -2vmin 0 0 #fedbbb, 0.4vmin -2.8vmin 0 -0.15vmin #d1a47b, 0vmin -3vmin 0 -0.15vmin #fedbbb;
+}
+
+.fingers__r::before {
+  content: '';
+  width: 80%;
+  height: 90%;
+  display: block;
+  position: absolute;
+  background: #d1a47b;
+  border-radius: 30% / 80%;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+  top: -275%;
+  left: -30%;
+}
+
+.fingers__r::after {
+  content: '';
+  width: 80%;
+  height: 90%;
+  display: block;
+  position: absolute;
+  background: #d1a47b;
+  border-radius: 30% / 80%;
+  -webkit-transform: rotate(-120deg);
+          transform: rotate(-120deg);
+  top: -270%;
+  left: 0%;
 }
 
 .torso {
