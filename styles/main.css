@@ -371,7 +371,6 @@ body {
 }
 
 .arm__l::after, .arm__r::after {
-  top: -28%;
   -webkit-transform: rotate(-95deg);
           transform: rotate(-95deg);
 }
@@ -403,6 +402,7 @@ body {
   position: absolute;
   background: #d1a47b;
   border-radius: 20% 20% 10% 80% / 30% 10% 10% 90%;
+  top: -28%;
   left: -12%;
   -webkit-transform: rotate(-20deg);
           transform: rotate(-20deg);
@@ -413,8 +413,8 @@ body {
   left: 77%;
   -webkit-transform: rotate(8deg);
           transform: rotate(8deg);
-  border-radius: 40% 40% 30% 0 / 40% 70% 30% 0;
-  background: linear-gradient(85deg, #ffd75e 18%, transparent 1%), radial-gradient(4% 1% at 50% 44%, #deb563 4vmin, transparent 4.2vmin), radial-gradient(4% 1% at 50% 36%, #a45216 4vmin, transparent 4.2vmin), #deb563;
+  border-radius: 30% 40% 30% 0 / 30% 70% 30% 0;
+  background: linear-gradient(85deg, #ffd75e 18%, transparent 1%), radial-gradient(4% 1% at 50% 41%, #deb563 4vmin, transparent 4.2vmin), radial-gradient(4% 1% at 50% 33%, #a45216 4vmin, transparent 4.2vmin), #deb563;
 }
 
 .arm__r::before {
@@ -429,15 +429,90 @@ body {
 
 .arm__r::after {
   content: '';
-  width: 76%;
-  height: 33%;
+  width: 90%;
+  height: 30%;
   display: block;
   position: absolute;
   background: #d1a47b;
-  border-radius: 50% 50% 70% 80% / 50% 50% 60% 90%;
-  left: 5%;
-  -webkit-transform: rotate(12deg);
-          transform: rotate(12deg);
+  border-radius: 50% 50% 70% 50% / 50% 50% 60% 90%;
+  top: -28%;
+  left: -5%;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.fingers__l, .fingers__r {
+  border-radius: 30% / 80%;
+  background-color: #d1a47b;
+  position: absolute;
+}
+
+.fingers__l {
+  width: 7%;
+  height: 1.5%;
+  top: 18.2%;
+  left: 20%;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  -webkit-box-shadow: 0.2vmin 0 0 0 #fedbbb, -0.2vmin -1.15vmin 0 -0.01vmin #d1a47b, 0vmin -1vmin 0 0.1vmin #fedbbb, 0 -2.4vmin 0 -0.01vmin #d1a47b, 0.2vmin -2.2vmin 0 0.1vmin #fedbbb;
+          box-shadow: 0.2vmin 0 0 0 #fedbbb, -0.2vmin -1.15vmin 0 -0.01vmin #d1a47b, 0vmin -1vmin 0 0.1vmin #fedbbb, 0 -2.4vmin 0 -0.01vmin #d1a47b, 0.2vmin -2.2vmin 0 0.1vmin #fedbbb;
+}
+
+.fingers__l::after {
+  content: '';
+  width: 90%;
+  height: 90%;
+  display: block;
+  position: absolute;
+  background: #d1a47b;
+  border-radius: 30% / 80%;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  top: -245%;
+  left: 18%;
+  -webkit-box-shadow: inset -0.2vmin 0 0 0 #fedbbb;
+          box-shadow: inset -0.2vmin 0 0 0 #fedbbb;
+}
+
+.fingers__r {
+  width: 4.8%;
+  height: 1.5%;
+  top: 17%;
+  left: 84%;
+  -webkit-transform: rotate(-68deg);
+          transform: rotate(-68deg);
+  -webkit-box-shadow: inset 0.2vmin 0 0 0 #fedbbb, 0.4vmin -1vmin 0 0 #d1a47b, 0.3vmin -1vmin 0 0 #fedbbb, 0.6vmin -2vmin 0 0 #d1a47b, 0.5vmin -2vmin 0 0 #fedbbb, 0.8vmin -3vmin 0 0 #d1a47b, 0.7vmin -3vmin 0 0 #fedbbb;
+          box-shadow: inset 0.2vmin 0 0 0 #fedbbb, 0.4vmin -1vmin 0 0 #d1a47b, 0.3vmin -1vmin 0 0 #fedbbb, 0.6vmin -2vmin 0 0 #d1a47b, 0.5vmin -2vmin 0 0 #fedbbb, 0.8vmin -3vmin 0 0 #d1a47b, 0.7vmin -3vmin 0 0 #fedbbb;
+}
+
+.fingers__r::before {
+  content: '';
+  width: 100%;
+  height: 90%;
+  display: block;
+  position: absolute;
+  background: #d1a47b;
+  border-radius: 30% 0 30% 30% / 80%;
+  -webkit-transform: rotate(-130deg);
+          transform: rotate(-130deg);
+  top: -280%;
+  left: 10%;
+  -webkit-box-shadow: inset 0.2vmin 0.2vmin 0 0 #fedbbb;
+          box-shadow: inset 0.2vmin 0.2vmin 0 0 #fedbbb;
+}
+
+.fingers__r::after {
+  content: '';
+  width: 100%;
+  height: 90%;
+  display: block;
+  position: absolute;
+  background: #d1a47b;
+  border-radius: 30% 0 30% 30% / 80%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: -235%;
+  left: -51%;
 }
 
 .sleeve__l, .sleeve__r {
@@ -458,84 +533,12 @@ body {
 .sleeve__r {
   width: 6.6%;
   height: 1.4%;
-  top: 20.6%;
-  left: 79%;
+  top: 20.4%;
+  left: 78.8%;
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
   border-radius: 10% 10% 30% 30%;
   background: linear-gradient(80deg, transparent 9%, #deb563 12%, #deb563 80%, transparent 81%), linear-gradient(-80deg, transparent 5%, #deb563 7%, #deb563 80%, transparent 81%);
-}
-
-.fingers__l, .fingers__r {
-  border-radius: 30% / 80%;
-  background-color: #d1a47b;
-  position: absolute;
-}
-
-.fingers__l {
-  width: 7%;
-  height: 1.5%;
-  top: 18.2%;
-  left: 20%;
-  -webkit-transform: rotate(-8deg);
-          transform: rotate(-8deg);
-  -webkit-box-shadow: 0.2vmin 0 0 0 #fedbbb, -0.2vmin -1.2vmin 0 -0.01vmin #d1a47b, 0vmin -1vmin 0 0.1vmin #fedbbb, -0.05vmin -2.4vmin 0 -0.01vmin #d1a47b, 0.2vmin -2.2vmin 0 0.1vmin #fedbbb;
-          box-shadow: 0.2vmin 0 0 0 #fedbbb, -0.2vmin -1.2vmin 0 -0.01vmin #d1a47b, 0vmin -1vmin 0 0.1vmin #fedbbb, -0.05vmin -2.4vmin 0 -0.01vmin #d1a47b, 0.2vmin -2.2vmin 0 0.1vmin #fedbbb;
-}
-
-.fingers__l::after {
-  content: '';
-  width: 90%;
-  height: 90%;
-  display: block;
-  position: absolute;
-  background: #d1a47b;
-  border-radius: 30% / 80%;
-  -webkit-transform: rotate(10deg);
-          transform: rotate(10deg);
-  top: -230%;
-  left: 18%;
-  -webkit-box-shadow: inset -0.2vmin 0 0 0 #fedbbb;
-          box-shadow: inset -0.2vmin 0 0 0 #fedbbb;
-}
-
-.fingers__r {
-  width: 6%;
-  height: 1.5%;
-  top: 17.5%;
-  left: 84%;
-  -webkit-transform: rotate(-70deg);
-          transform: rotate(-70deg);
-  -webkit-box-shadow: inset 0.2vmin 0.2vmin 0 0 #fedbbb, 0.6vmin -0.8vmin 0 0 #d1a47b, 0.4vmin -1vmin 0 0 #fedbbb, 0.4vmin -1.8vmin 0 0 #d1a47b, 0.2vmin -2vmin 0 0 #fedbbb, 0.4vmin -2.8vmin 0 -0.15vmin #d1a47b, 0vmin -3vmin 0 -0.15vmin #fedbbb;
-          box-shadow: inset 0.2vmin 0.2vmin 0 0 #fedbbb, 0.6vmin -0.8vmin 0 0 #d1a47b, 0.4vmin -1vmin 0 0 #fedbbb, 0.4vmin -1.8vmin 0 0 #d1a47b, 0.2vmin -2vmin 0 0 #fedbbb, 0.4vmin -2.8vmin 0 -0.15vmin #d1a47b, 0vmin -3vmin 0 -0.15vmin #fedbbb;
-}
-
-.fingers__r::before {
-  content: '';
-  width: 80%;
-  height: 90%;
-  display: block;
-  position: absolute;
-  background: #d1a47b;
-  border-radius: 30% / 80%;
-  -webkit-transform: rotate(-35deg);
-          transform: rotate(-35deg);
-  top: -275%;
-  left: -30%;
-}
-
-.fingers__r::after {
-  content: '';
-  width: 80%;
-  height: 90%;
-  display: block;
-  position: absolute;
-  background: #d1a47b;
-  border-radius: 30% / 80%;
-  -webkit-transform: rotate(-120deg);
-          transform: rotate(-120deg);
-  top: -270%;
-  left: 0%;
 }
 
 .torso {
