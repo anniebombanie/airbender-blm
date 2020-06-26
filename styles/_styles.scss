@@ -83,12 +83,12 @@ body {
 }
 
 .sign {
-  @include w-h( 56%, 22% );
+  @include w-h( 54.5%, 22% );
   position: absolute;
   top: -2.8%;
   left: 22%;
   transform: rotate( -6deg );
-  background: linear-gradient( 165deg, darken( $wh, 22 ) 65%, darken( $wh, 10 ) 66% );
+  background: linear-gradient( 165deg, darken( $wh, 18 ) 65%, darken( $wh, 5 ) 66% );
 
   svg {
     @include w-h( 90%, 90% );
@@ -397,8 +397,8 @@ body {
   }
 
   &__r {
-    top: 20.6%;
-    left: 77%;
+    top: 21.4%;
+    left: 75.7%;
     transform: rotate( 8deg );
     border-radius: 30% 40% 30% 0 / 30% 70% 30% 0;
     background:
@@ -465,17 +465,17 @@ body {
 
   &__r {
     @include w-h( 4.8%, 1.5% );
-    top: 17%;
-    left: 84%;
-    transform: rotate( -68deg );
+    top: 17.7%;
+    left: 82.8%;
+    transform: rotate( -72deg );
     box-shadow:
     inset 0.2vmin 0 0 0 $sl,
-      0.4vmin -1vmin 0 0 $sd,
-      0.3vmin -1vmin 0 0 $sl,
-      0.6vmin -2vmin 0 0 $sd,
-      0.5vmin -2vmin 0 0 $sl,
-      0.8vmin -3vmin 0 0 $sd,
-      0.7vmin -3vmin 0 0 $sl;
+      0.4vmin -1.1vmin 0 0 $sd,
+      0.2vmin -1.1vmin 0 0 $sl,
+      0.8vmin -2.2vmin 0 0 $sd,
+      0.6vmin -2.2vmin 0 0 $sl,
+      1.2vmin -3.3vmin 0 0 $sd,
+      1vmin -3.3vmin 0 0 $sl;
 
     &::before {
       @include pseduo-div( 100%, 90%, $sd );
@@ -517,8 +517,8 @@ body {
 
   &__r {
     @include w-h( 6.6%, 1.4% );
-    top: 20.4%;
-    left: 78.8%;
+    top: 21%;
+    left: 77.4%;
     transform: rotate( 5deg );
     border-radius: 10% 10% 30% 30%;
     background:
