@@ -84,7 +84,7 @@ body {
   position: absolute;
   top: -2.5%;
   transform: rotate( -2.5deg );
-  background: linear-gradient( 165deg, darken( $wh, 9 ) 65%, darken( $wh, 2 ) 66% );
+  background: linear-gradient( 165deg, darken( $wh, 15 ) 65%, darken( $wh, 5 ) 66% );
 
   svg {
     @include w-h( 90%, 90% );

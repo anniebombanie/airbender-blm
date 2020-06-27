@@ -71,7 +71,7 @@ body {
   top: -2.5%;
   -webkit-transform: rotate(-2.5deg);
           transform: rotate(-2.5deg);
-  background: linear-gradient(165deg, #e8e8e8 65%, #fafafa 66%);
+  background: linear-gradient(165deg, #d9d9d9 65%, #f2f2f2 66%);
 }
 
 .sign svg {
