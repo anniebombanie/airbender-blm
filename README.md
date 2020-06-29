@@ -1,4 +1,4 @@
-# airbender-aang-x-blm
+# Airbender Aang x BLM
 
 
 This CSS art/animation was inspired by a video of monks marching peacefully in a BlackLivesMatter protest, Berlin, Germany.
